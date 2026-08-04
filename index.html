@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Nossa História Capixaba</title>
+
+    <link rel="stylesheet"
+    href="css/style.css">
+
+    <link rel="stylesheet"
+    href="css/responsivo.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+     TOPO
+========================= -->
+
+<header class="topo">
+
+    <div class="logo-area">
+
+        <img
+        src="imgs/icons/Logo_Marista.png"
+        alt="Logo Marista"
+        class="logo-marista">
+
+        <h1>Nossa História Capixaba</h1>
+
+    </div>
+
+</header>
+
+<!-- =========================
+     CONTAINER
+========================= -->
+
+<main class="container">
+
+    <!-- MENU -->
+
+    <aside class="menu-lateral">
+
+        <a class="ativo" href="#">
+            Início
+        </a>
+
+        <a href="pgs/informacoes_do_es.html">
+            Informações do ES
+        </a>
+
+        <a href="pgs/historia.html">
+            História
+        </a>
+
+        <a href="pgs/geografia.html">
+            Geografia
+        </a>
+
+        <a href="pgs/estruturas.html">
+            Estruturas
+        </a>
+
+        <a href="pgs/cultura.html">
+            Cultura
+        </a>
+
+        <a href="pgs/objetivo.html">
+            Objetivo do Projeto
+        </a>
+
+    </aside>
+
+    <!-- CONTEÚDO -->
+
+    <section class="conteudo">
+
+        <!-- =========================
+             SLIDER
+        ========================= -->
+
+        <section class="slider">
+
+            <!-- BOTÕES -->
+
+            <button class="anterior" type="button">
+                &#10094;
+            </button>
+
+            <button class="proximo" type="button">
+                &#10095;
+            </button>
+
+            <!-- SLIDES -->
+
+            <div class="slides">
+
+                <!-- =========================
+                     CONVENTO
+                ========================= -->
+
+                <div class="slide ativo">
+
+                    <a href="pgs/convento_slide1.html">
+
+                        <img
+                        src="imgs/slides/Slide1.jpg"
+                        alt="Convento da Penha">
+
+                        <div class="texto-slide">
+
+                            <h2>
+                                Convento da Penha
+                            </h2>
+
+                            <p>
+                                Um dos maiores símbolos
+                                históricos e religiosos
+                                do Espírito Santo.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <!-- =========================
+                     PEDRA AZUL
+                ========================= -->
+
+                <div class="slide">
+
+                    <a href="pgs/pedrAzul_slide2.html">
+
+                        <img
+                        src="imgs/slides/Slide2.jpg"
+                        alt="Pedra Azul">
+
+                        <div class="texto-slide">
+
+                            <h2>
+                                Pedra Azul
+                            </h2>
+
+                            <p>
+                                Uma das paisagens naturais
+                                mais famosas do estado.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <!-- =========================
+                     PANELEIRAS
+                ========================= -->
+
+                <div class="slide">
+
+                    <a href="pgs/Paneleiras_de_Goiabeiras_slide3.html">
+
+                        <img
+                        src="imgs/slides/Slide3.jpg"
+                        alt="Paneleiras de Goiabeiras">
+
+                        <div class="texto-slide">
+
+                            <h2>
+                                Paneleiras de Goiabeiras
+                            </h2>
+
+                            <p>
+                                Patrimônio cultural
+                                tradicional capixaba.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             CARDS
+        ========================= -->
+
+        <section class="noticias">
+
+            <!-- CARD 1 -->
+
+            <a href="pgs/revolta.html"
+            class="card-noticia">
+
+                <img
+                src="imgs/curiosidades/Curiosidade1.jpg.png"
+                alt="Revoltas populares">
+
+                <div class="info-noticia">
+
+                    <h3>
+                        Revoltas e Movimentos Populares
+                    </h3>
+
+                    <p>
+                        Conheça os principais levantes
+                        populares que marcaram a história
+                        brasileira e mundial.
+                    </p>
+
+                </div>
+
+            </a>
+
+            <!-- CARD 2 -->
+
+            <a href="pgs/manifestacao.html"
+            class="card-noticia">
+
+                <img
+                src="imgs/curiosidades/Curiosidade2.jpg.png"
+                alt="Manifestações culturais">
+
+                <div class="info-noticia">
+
+                    <h3>
+                        Manifestações Culturais
+                    </h3>
+
+                    <p>
+                        Explore festas, danças, músicas,
+                        tradições e costumes capixabas.
+                    </p>
+
+                </div>
+
+            </a>
+
+            <!-- CARD 3 -->
+
+            <a href="pgs/personalidades.html"
+            class="card-noticia">
+
+                <img
+                src="imgs/curiosidades/Curiosidade3.jpg.png"
+                alt="Personalidades capixabas">
+
+                <div class="info-noticia">
+
+                    <h3>
+                        Personalidades Capixabas
+                    </h3>
+
+                    <p>
+                        Conheça pessoas importantes
+                        da história e cultura do Espírito Santo.
+                    </p>
+
+                </div>
+
+            </a>
+
+        </section>
+
+    </section>
+
+</main>
+
+<!-- =========================
+     SCRIPT
+========================= -->
+
+<script>
+
+const slides =
+document.querySelectorAll(".slide");
+
+const btnAnterior =
+document.querySelector(".anterior");
+
+const btnProximo =
+document.querySelector(".proximo");
+
+let slideAtual = 0;
+
+/* MOSTRAR SLIDE */
+
+function mostrarSlide(index){
+
+    slides.forEach(slide => {
+
+        slide.classList.remove("ativo");
+
+    });
+
+    slides[index]
+    .classList.add("ativo");
+
+}
+
+/* PRÓXIMO */
+
+btnProximo.addEventListener(
+"click",
+
+function(e){
+
+    e.stopPropagation();
+
+    slideAtual++;
+
+    if(slideAtual >= slides.length){
+
+        slideAtual = 0;
+
+    }
+
+    mostrarSlide(slideAtual);
+
+}
+
+);
+
+/* ANTERIOR */
+
+btnAnterior.addEventListener(
+"click",
+
+function(e){
+
+    e.stopPropagation();
+
+    slideAtual--;
+
+    if(slideAtual < 0){
+
+        slideAtual =
+        slides.length - 1;
+
+    }
+
+    mostrarSlide(slideAtual);
+
+}
+
+);
+
+</script>
+
+</body>
+
+</html>
