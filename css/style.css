@@ -1,0 +1,1048 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(120deg,#eef4f7,#f7edf5);
+    color:#001f3f;
+}
+
+.topo{
+    width:100%;
+    height:100px;
+    background:linear-gradient(90deg,#91d3e4,#d6a5c7);
+    border-top:2px solid #111;
+    border-bottom:4px solid #0b78b6;
+    display:flex;
+    align-items:center;
+    padding:0 40px;
+}
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.logo-marista{
+    width: 100px;
+    height:100px;
+    object-fit:contain;
+}
+
+.logo-area h1{
+    font-size:34px;
+    color:#0b4f8f;
+}
+
+.container{
+    display:flex;
+    gap:28px;
+    padding:28px;
+}
+
+.menu-lateral{
+    width:260px;
+    background:white;
+    border-radius:22px;
+    padding:24px;
+    height:fit-content;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.menu-lateral a{
+    display:block;
+    text-decoration:none;
+    background:#ececec;
+    color:#000;
+    padding:17px;
+    margin-bottom:15px;
+    border-radius:14px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.menu-lateral a:hover{
+    background:#dcdcdc;
+}
+
+.menu-lateral .ativo{
+    background:#c85c7f;
+    color:white;
+}
+
+.conteudo{
+    flex:1;
+}
+
+/* SLIDER */
+
+.slider{
+    position:relative;
+    width:100%;
+    height:410px;
+    border-radius:24px;
+    overflow:hidden;
+    margin-bottom:55px;
+    box-shadow:0 10px 28px rgba(0,0,0,0.12);
+}
+
+.slides{
+    width:100%;
+    height:100%;
+}
+
+.slide{
+    display:none;
+    width:100%;
+    height:100%;
+}
+
+.slide.ativo{
+    display:block;
+}
+
+.slide a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+    color:white;
+    position:relative;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.texto-slide{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding:28px 40px;
+    background:rgba(0,135,190,0.88);
+    color:white;
+}
+
+.texto-slide h2{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.texto-slide p{
+    font-size:18px;
+}
+
+.anterior,
+.proximo{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:48px;
+    height:70px;
+    border:none;
+    background:rgba(0,0,0,0.35);
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+    transition:0.3s;
+    z-index:20;
+}
+
+.anterior:hover,
+.proximo:hover{
+    background:rgba(0,0,0,0.55);
+}
+
+.anterior{
+    left:0;
+}
+
+.proximo{
+    right:0;
+}
+
+/* CARDS INDEX */
+
+.noticias{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.card-noticia{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    width:100%;
+    background:#f5f5f5;
+    border-radius:28px;
+    overflow:hidden;
+    min-height:260px;
+    text-decoration:none;
+    color:inherit;
+    padding-right:35px;
+    transition:0.35s;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card-noticia:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-noticia img{
+    width:360px;
+    min-width:360px;
+    height:260px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.card-noticia:hover img{
+    transform:scale(1.03);
+}
+
+.info-noticia{
+    flex:1;
+    padding:35px 38px;
+}
+
+.info-noticia h3{
+    font-size:30px;
+    line-height:1.25;
+    color:#00366d;
+    margin-bottom:18px;
+    transition:0.3s;
+}
+
+.info-noticia p{
+    font-size:18px;
+    line-height:1.7;
+    color:#333;
+}
+
+.card-noticia:hover h3{
+    color:#005ec4;
+}
+
+/* PÁGINAS INTERNAS */
+
+.conteudo-pagina{
+    padding:40px;
+}
+
+.banner-pagina{
+    width:100%;
+    height:430px;
+    object-fit:cover;
+    border-radius:25px;
+    margin-bottom:35px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.18);
+}
+
+.texto-pagina{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom:35px;
+}
+
+.texto-pagina h2{
+    color:#003b73;
+    font-size:38px;
+    margin-bottom:25px;
+}
+
+.texto-pagina p{
+    font-size:18px;
+    line-height:1.8;
+    color:#333;
+    margin-bottom:22px;
+}
+
+/* CURIOSIDADES */
+
+.curiosidade-box{
+    background:#f3f7fb;
+    border-left:6px solid #005ec4;
+    padding:30px;
+    border-radius:18px;
+    margin-top:35px;
+}
+
+.curiosidade-box h3{
+    color:#003b73;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.curiosidade-box ul{
+    padding-left:20px;
+}
+
+.curiosidade-box li{
+    margin-bottom:14px;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* GALERIA */
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:22px;
+    margin-top:40px;
+}
+
+.galeria img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.4s;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.galeria img:hover{
+    transform:scale(1.03);
+    filter:brightness(0.92);
+}
+
+/* BOTÃO */
+
+.botao-voltar{
+    display:inline-block;
+    margin-top:45px;
+    background:#003b73;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:14px;
+    font-size:17px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.botao-voltar:hover{
+    background:#005ec4;
+    transform:translateY(-2px);
+}
+
+/* INFORMAÇÕES DO ES */
+
+.painel-es-img{
+    width:100%;
+    max-width:1250px;
+    height:auto;
+    display:block;
+    margin:35px auto 45px auto;
+    border-radius:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.cards-dados-es{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+    margin-bottom:35px;
+}
+
+.card-dado-es{
+    background:#f3f7fb;
+    border-left:6px solid #005ec4;
+    border-radius:18px;
+    padding:25px;
+    transition:0.3s;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-dado-es:hover{
+    transform:translateY(-4px);
+}
+
+.card-dado-es h3{
+    color:#003b73;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.card-dado-es p{
+    font-size:17px;
+    line-height:1.6;
+    color:#333;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:1000px){
+    .container{
+        flex-direction:column;
+    }
+
+    .menu-lateral{
+        width:100%;
+    }
+}
+
+@media(max-width:900px){
+    .conteudo-pagina{
+        padding:20px;
+    }
+
+    .banner-pagina{
+        height:260px;
+    }
+
+    .texto-pagina{
+        padding:25px;
+    }
+
+    .texto-pagina h2{
+        font-size:28px;
+    }
+
+    .texto-pagina p{
+        font-size:16px;
+    }
+
+    .curiosidade-box h3{
+        font-size:24px;
+    }
+}
+
+@media(max-width:800px){
+    .card-noticia{
+        flex-direction:column;
+        padding-right:0;
+    }
+
+    .card-noticia img{
+        width:100%;
+        min-width:100%;
+        height:240px;
+    }
+
+    .slider{
+        height:320px;
+    }
+}
+
+@media(max-width:600px){
+    .topo{
+        padding:0 20px;
+    }
+
+    .logo-area h1{
+        font-size:24px;
+    }
+
+    .texto-slide h2{
+        font-size:26px;
+    }
+
+    .info-noticia h3{
+        font-size:28px;
+    }
+
+    .banner-pagina{
+        height:200px;
+    }
+
+    .galeria{
+        grid-template-columns:1fr;
+    }
+}.container {
+    display: flex;
+    gap: 30px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px;
+}
+
+.conteudo-principal {
+    flex: 1;
+}
+
+.menu-lateral {
+    width: 260px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.menu-lateral a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    background: #e9e9e9;
+    padding: 18px;
+    margin-bottom: 14px;
+    border-radius: 14px;
+    transition: .3s;
+}
+
+.menu-lateral a:hover,
+.menu-lateral .ativo {
+    background: #c95b83;
+    color: #fff;
+}
+
+.painel-es-img {
+    width: 100%;
+    max-width: 750px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 18px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .menu-lateral {
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+}
+header {
+  height: 95px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 60px;
+  background: linear-gradient(90deg, #a9dbe7, #c7bedb);
+  border-bottom: 4px solid #0077b6;
+}
+
+header img,
+.logo {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 38px;
+  color: #00579b;
+  font-weight: 700;
+  line-height: 1;
+}
+/* ======================================================
+   ESTILOS EXCLUSIVOS PARA: INFORMAÇÕES DO ESPÍRITO SANTO
+   ====================================================== */
+
+/* Ajuste e polimento do painel principal de conteúdo */
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Destaque para listas dentro da página de Informações */
+.texto-pagina ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.texto-pagina li {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Efeito visual refinado para a imagem do painel */
+.painel-es-img {
+    width: 100%;
+    max-width: 850px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.painel-es-img:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.16);
+}
+
+/* Grid de Cards de Dados do ES com fundo degradê suave */
+.cards-dados-es {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin: 30px 0 40px 0;
+}
+
+.card-dado-es {
+    background: linear-gradient(135deg, #ffffff, #f4f8fb);
+    border-left: 6px solid #005ec4;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-dado-es:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 94, 196, 0.15);
+    border-left-color: #c95b83;
+}
+
+.card-dado-es h3 {
+    color: #003b73;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.3px;
+}
+
+.card-dado-es p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4a5568;
+    margin: 0;
+}
+
+/* Melhoria nas Caixas de Curiosidades e Regiões */
+.curiosidade-box {
+    background: #ffffff;
+    border-left: 6px solid #c95b83;
+    padding: 32px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+}
+
+.curiosidade-box h3 {
+    color: #003b73;
+    font-size: 26px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.curiosidade-box li {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #334155;
+    margin-bottom: 12px;
+}
+
+/* Ajuste fino do Menu Lateral com animação no Hover */
+.menu-lateral a {
+    transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.menu-lateral a:hover {
+    transform: translateX(5px);
+}
+
+/* Responsividade dos novos cards para telas menores */
+@media (max-width: 600px) {
+    .cards-dados-es {
+        grid-template-columns: 1fr;
+    }
+    
+    .curiosidade-box {
+        padding: 22px;
+    }
+    
+    .card-dado-es h3 {
+        font-size: 19px;
+    }
+}
+/* ======================================================
+   1. RESET E ESTILOS GERAIS DA PÁGINA
+   ====================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg, #eef4f7, #f7edf5);
+    color: #001f3f;
+}
+
+/* ======================================================
+   2. CABEÇALHO (HEADER / TOPO)
+   ====================================================== */
+.topo, header {
+    width: 100%;
+    height: 95px;
+    background: linear-gradient(90deg, #a9dbe7, #c7bedb);
+    border-top: 2px solid #111;
+    border-bottom: 4px solid #0077b6;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo-marista, header img, .logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.logo-area h1, header h1 {
+    font-size: 34px;
+    color: #00579b;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+}
+
+/* ======================================================
+   3. LAYOUT PRINCIPAL (CONTAINER, MENU E CONTEÚDO)
+   ====================================================== */
+.container {
+    display: flex;
+    gap: 30px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px;
+}
+
+.menu-lateral {
+    width: 260px;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.menu-lateral a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    background: #ececec;
+    padding: 17px;
+    margin-bottom: 14px;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.menu-lateral a:hover {
+    background: #dcdcdc;
+    transform: translateX(5px);
+}
+
+.menu-lateral .ativo {
+    background: #c95b83;
+    color: #ffffff;
+}
+
+.conteudo-principal, .conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ======================================================
+   4. ESTRUTURA DE TEXTO E BLOCOS
+   ====================================================== */
+.conteudo-pagina {
+    padding: 40px;
+}
+
+.texto-pagina {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 35px;
+}
+
+.texto-pagina h2 {
+    color: #003b73;
+    font-size: 32px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.texto-pagina p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.texto-pagina ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.texto-pagina li {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.banner-pagina {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* ======================================================
+   5. CARDS DE DADOS E INFRAESTRUTURA
+   ====================================================== */
+.cards-dados-es {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    margin: 25px 0 35px 0;
+}
+
+.card-dado-es {
+    background: linear-gradient(135deg, #ffffff, #f4f8fb);
+    border-left: 6px solid #005ec4;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+}
+
+.card-dado-es:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 94, 196, 0.15);
+    border-left-color: #c95b83;
+}
+
+.card-dado-es h3 {
+    color: #003b73;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-dado-es p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a5568;
+    margin: 0;
+}
+
+/* Highlight de negrito nos cards para reforçar nomes (EDP, CESAN, etc) */
+.card-dado-es strong {
+    color: #003b73;
+}
+
+/* ======================================================
+   6. CAIXAS DE CURIOSIDADES
+   ====================================================== */
+.curiosidade-box {
+    background: #ffffff;
+    border-left: 6px solid #c95b83;
+    padding: 32px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+}
+
+.curiosidade-box h3 {
+    color: #003b73;
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.curiosidade-box ul {
+    padding-left: 20px;
+}
+
+.curiosidade-box li {
+    margin-bottom: 14px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #334155;
+}
+
+/* ======================================================
+   7. IMAGEM DO PAINEL / BOTÃO
+   ====================================================== */
+.painel-es-img {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.botao-voltar {
+    display: inline-block;
+    margin-top: 45px;
+    background: #003b73;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-voltar:hover {
+    background: #005ec4;
+    transform: translateY(-2px);
+}
+
+/* ======================================================
+   8. RESPONSIVIDADE
+   ====================================================== */
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .menu-lateral {
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .conteudo-pagina {
+        padding: 20px;
+    }
+
+    .banner-pagina {
+        height: 260px;
+    }
+
+    .texto-pagina {
+        padding: 25px;
+    }
+
+    .texto-pagina h2 {
+        font-size: 26px;
+    }
+
+    .texto-pagina p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .topo, header {
+        padding: 0 20px;
+    }
+
+    .logo-area h1, header h1 {
+        font-size: 24px;
+    }
+
+    .cards-dados-es {
+        grid-template-columns: 1fr;
+    }
+
+    .curiosidade-box {
+        padding: 22px;
+    }
+}
+/* ======================================================
+   GRID DE CARDS (CORRIGIDO SEM BURACOS / LAYOUT 2x2)
+   ====================================================== */
+.cards-dados-es {
+    display: grid;
+    /* Força um layout simétrico de 2 colunas */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin: 25px 0 35px 0;
+}
+
+/* Se houver um número ímpar de cards, o último estica para ocupar a linha inteira */
+.card-dado-es:last-child:nth-child(odd) {
+    grid-column: span 2;
+}
+
+.card-dado-es {
+    background: linear-gradient(135deg, #ffffff, #f4f8fb);
+    border-left: 6px solid #005ec4;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-dado-es:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 94, 196, 0.15);
+    border-left-color: #c95b83;
+}
+
+.card-dado-es h3 {
+    color: #003b73;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card-dado-es p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a5568;
+    margin: 0;
+}
+
+/* Ajuste Responsivo para Celulares */
+@media (max-width: 768px) {
+    .cards-dados-es {
+        grid-template-columns: 1fr; /* Em telas pequenas vira 1 coluna */
+    }
+
+    .card-dado-es:last-child:nth-child(odd) {
+        grid-column: span 1;
+    }
+}

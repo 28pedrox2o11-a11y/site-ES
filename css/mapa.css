@@ -1,0 +1,196 @@
+.catalogo-regioes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.regiao-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.12);
+    transition: .3s;
+    cursor: pointer;
+    border-left: 6px solid #3498db;
+}
+
+.regiao-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,.18);
+}
+
+.regiao-card h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #222;
+}
+
+.regiao-card p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.noroeste { border-left-color: #8BC34A; }
+.nordeste { border-left-color: #64B5F6; }
+.centro-oeste { border-left-color: #9575CD; }
+.central-serrana { border-left-color: #FFD54F; }
+.metropolitana { border-left-color: #EF5350; }
+.central-sul { border-left-color: #FFC107; }
+.litoral-sul { border-left-color: #81C784; }
+.caparao { border-left-color: #A1887F; }
+
+.info-regiao {
+    margin-top: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-conteudo {
+  background: white;
+  width: min(90%, 600px);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.fechar {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#municipiosRegiao a {
+  display: inline-block;
+  margin: 6px;
+  padding: 8px 12px;
+  background: #eef5ff;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-conteudo {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    width: 90%;
+    max-width: 700px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.modal-conteudo {
+    background: linear-gradient(180deg, #ffffff, #f6f9ff);
+    width: 90%;
+    max-width: 720px;
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    position: relative;
+    animation: subirModal 0.25s ease;
+}
+
+@keyframes subirModal {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.fechar {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    border: none;
+    background: #eef2f7;
+    color: #222;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fechar:hover {
+    background: #ffdddd;
+    color: #c40000;
+    transform: rotate(90deg);
+}
+
+#tituloRegiao {
+    font-size: 2rem;
+    color: #12315c;
+    margin-bottom: 8px;
+}
+
+#descricaoRegiao {
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+#municipiosRegiao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+#municipiosRegiao a {
+    text-decoration: none;
+    color: #12315c;
+    background: #eaf2ff;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.25s;
+}
+
+#municipiosRegiao a:hover {
+    background: #12315c;
+    color: white;
+    transform: translateY(-3px);
+}

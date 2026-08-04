@@ -1,0 +1,235 @@
+/* =========================
+   ESTILOS GERAIS
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* =========================
+   TOPO
+========================= */
+.topo {
+    background-color: #002d62; /* Tom azul institucional */
+    color: #fff;
+    padding: 15px 30px;
+    width: 100%;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-marista {
+    height: 50px;
+    object-fit: contain;
+}
+
+.topo h1 {
+    font-size: 24px;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* =========================
+   MENU LATERAL
+========================= */
+.menu-lateral {
+    width: 250px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.menu-lateral a {
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.menu-lateral a:hover,
+.menu-lateral a.ativo {
+    background-color: #002d62;
+    color: #fff;
+    border-left: 4px solid #ffcc00;
+}
+
+/* =========================
+   CONTEÚDO
+========================= */
+.conteudo {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+/* =========================
+   SLIDER
+========================= */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    background-color: #000;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+}
+
+.slide.ativo {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-slide {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: #fff;
+}
+
+.texto-slide h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.texto-slide p {
+    font-size: 14px;
+}
+
+/* Botões do Slider */
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.slider button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.anterior {
+    left: 15px;
+}
+
+.proximo {
+    right: 15px;
+}
+
+/* =========================
+   CARDS DE NOTÍCIAS / TEMAS
+========================= */
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card-noticia {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-noticia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card-noticia img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.info-noticia {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-noticia h3 {
+    font-size: 18px;
+    color: #002d62;
+}
+
+.info-noticia p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}

@@ -1,0 +1,52 @@
+@media(max-width:1100px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .menu-lateral{
+        width:100%;
+        position:relative;
+    }
+
+    .slider{
+        max-width:100%;
+    }
+
+    .noticias{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .container{
+        padding:15px;
+    }
+
+    .texto-slide{
+        padding:18px;
+    }
+
+    .texto-slide h2{
+        font-size:24px;
+    }
+
+    .slider{
+        height:280px;
+    }
+
+    .slide img{
+        height:280px;
+    }
+
+    .logo-area h1{
+        font-size:26px;
+    }
+
+    .logo-marista{
+        width:55px;
+    }
+
+}

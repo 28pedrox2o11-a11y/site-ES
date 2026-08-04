@@ -1,0 +1,324 @@
+/* ======================================================
+   1. RESET E ESTILOS GERAIS DA PÁGINA
+   ====================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg, #eef4f7, #f7edf5);
+    color: #001f3f;
+}
+
+/* ======================================================
+   2. CABEÇALHO (HEADER / TOPO)
+   ====================================================== */
+.topo, header {
+    width: 100%;
+    height: 95px;
+    background: linear-gradient(90deg, #a9dbe7, #c7bedb);
+    border-top: 2px solid #111;
+    border-bottom: 4px solid #0077b6;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo-marista, header img, .logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.logo-area h1, header h1 {
+    font-size: 34px;
+    color: #00579b;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+}
+
+/* ======================================================
+   3. LAYOUT PRINCIPAL (CONTAINER, MENU E CONTEÚDO)
+   ====================================================== */
+.container {
+    display: flex;
+    gap: 30px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px;
+}
+
+.menu-lateral {
+    width: 260px;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.menu-lateral a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    background: #ececec;
+    padding: 17px;
+    margin-bottom: 14px;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.menu-lateral a:hover {
+    background: #dcdcdc;
+    transform: translateX(5px);
+}
+
+.menu-lateral .ativo {
+    background: #c95b83;
+    color: #ffffff;
+}
+
+.conteudo-principal, .conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ======================================================
+   4. ESTRUTURA DE TEXTO E BLOCOS
+   ====================================================== */
+.conteudo-pagina {
+    padding: 40px;
+}
+
+.texto-pagina {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 35px;
+}
+
+.texto-pagina h2 {
+    color: #003b73;
+    font-size: 32px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.texto-pagina p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.texto-pagina ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.texto-pagina li {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.banner-pagina {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* ======================================================
+   5. GRID DE CARDS (LAYOUT 2x2 SIMÉTRICO E RESPONSIVO)
+   ====================================================== */
+.cards-dados-es {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin: 25px 0 35px 0;
+}
+
+.card-dado-es:last-child:nth-child(odd) {
+    grid-column: span 2;
+}
+
+.card-dado-es {
+    background: linear-gradient(135deg, #ffffff, #f4f8fb);
+    border-left: 6px solid #005ec4;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-dado-es:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 94, 196, 0.15);
+    border-left-color: #c95b83;
+}
+
+.card-dado-es h3 {
+    color: #003b73;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card-dado-es p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a5568;
+    margin: 0;
+}
+
+.card-dado-es strong {
+    color: #003b73;
+}
+
+/* ======================================================
+   6. CAIXAS DE CURIOSIDADES
+   ====================================================== */
+.curiosidade-box {
+    background: #ffffff;
+    border-left: 6px solid #c95b83;
+    padding: 32px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+}
+
+.curiosidade-box h3 {
+    color: #003b73;
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.curiosidade-box ul {
+    padding-left: 20px;
+}
+
+.curiosidade-box li {
+    margin-bottom: 14px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #334155;
+}
+
+/* ======================================================
+   7. IMAGEM DO PAINEL / BOTÃO
+   ====================================================== */
+.painel-es-img {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.botao-voltar {
+    display: inline-block;
+    margin-top: 45px;
+    background: #003b73;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-voltar:hover {
+    background: #005ec4;
+    transform: translateY(-2px);
+}
+
+/* ======================================================
+   8. RESPONSIVIDADE
+   ====================================================== */
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .menu-lateral {
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .conteudo-pagina {
+        padding: 20px;
+    }
+
+    .banner-pagina {
+        height: 260px;
+    }
+
+    .texto-pagina {
+        padding: 25px;
+    }
+
+    .texto-pagina h2 {
+        font-size: 26px;
+    }
+
+    .texto-pagina p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-dados-es {
+        grid-template-columns: 1fr;
+    }
+
+    .card-dado-es:last-child:nth-child(odd) {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .topo, header {
+        padding: 0 20px;
+    }
+
+    .logo-area h1, header h1 {
+        font-size: 24px;
+    }
+
+    .curiosidade-box {
+        padding: 22px;
+    }
+}

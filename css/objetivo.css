@@ -1,0 +1,102 @@
+/* ======================================================
+   ESTILOS ESPECÍFICOS: OBJETIVO DO PROJETO (objetivo.css)
+   ====================================================== */
+
+/* BANNER PRINCIPAL (FUNDO CLARO) */
+.banner-objetivo {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 38px 42px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.banner-objetivo h1 {
+    color: #00579b;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 14px;
+    letter-spacing: -0.5px;
+}
+
+.banner-objetivo p {
+    color: #333333;
+    font-size: 1.02rem;
+    line-height: 1.68;
+    margin: 0;
+}
+
+/* GRIDS DE CARDS (2 COLUNAS FIXAS) */
+.cards-objetivo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 20px 0 35px 0;
+}
+
+.card-objetivo:last-child:nth-child(odd) {
+    grid-column: span 2;
+}
+
+.card-objetivo {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 18px;
+    border-left: 6px solid #00579b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-objetivo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+    border-left-color: #c95b83;
+}
+
+.card-objetivo h3 {
+    color: #00579b;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.card-objetivo p {
+    font-size: 0.95rem;
+    color: #4a5568;
+    line-height: 1.68;
+    margin: 0;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+.texto-pagina h2 {
+    color: #003b73;
+    font-size: 1.55rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+/* RESPONSIVIDADE MÓVEL */
+@media (max-width: 768px) {
+    .banner-objetivo {
+        padding: 25px 20px;
+    }
+
+    .banner-objetivo h1 {
+        font-size: 1.8rem;
+    }
+
+    .cards-objetivo {
+        grid-template-columns: 1fr;
+    }
+
+    .card-objetivo:last-child:nth-child(odd) {
+        grid-column: span 1;
+    }
+}

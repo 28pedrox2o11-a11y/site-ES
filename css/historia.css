@@ -1,0 +1,292 @@
+/* =========================
+   HISTÓRIA
+========================= */
+
+.historia-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 88%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* CARDS PRINCIPAIS (HEADER, PERÍODOS E MAPA) */
+
+.historia-header,
+.periodo-card,
+.mapa-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TÍTULO DA PÁGINA (HEADER) */
+
+.historia-header h1 {
+    color: #004f93;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+.historia-header p {
+    color: #222222;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* CARDS DOS PERÍODOS HISTÓRICOS */
+
+.periodo-card h2 {
+    color: #004f93;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    padding: 0;
+}
+
+.periodo-card span {
+    display: block;
+    color: #555555;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 24px; /* Afasta e dá respiro antes do primeiro subtítulo */
+    padding: 0;
+}
+
+/* Subtítulos dos tópicos (ex: A Chegada do Donatário...) */
+.periodo-card h3 {
+    color: #004f93;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 28px;    /* Afasta do bloco de texto anterior */
+    margin-bottom: 12px; /* Afasta do parágrafo logo abaixo */
+    padding: 0;
+}
+
+/* O primeiro h3 logo após o span de data não precisa de margem superior grande */
+.periodo-card span + h3 {
+    margin-top: 0;
+}
+
+/* Parágrafos do texto */
+.periodo-card p {
+    color: #222222;
+    font-size: 1.05rem;
+    line-height: 1.7;    /* Altura de linha legível */
+    margin-top: 0;
+    margin-bottom: 18px; /* Espaçamento entre parágrafos */
+}
+
+.periodo-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* MAPA */
+
+.mapa-card {
+    min-height: 650px;
+}
+
+.mapa-vazio {
+    margin-top: 25px;
+    height: 500px;
+    border-radius: 25px;
+    background: #f3f6fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mapa-vazio p {
+    color: #004f93;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* =========================
+   PÁGINAS DOS MUNICÍPIOS
+========================= */
+
+.pagina-municipio {
+    max-width: 1120px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 12px 22px;
+    background: #0b5c99;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.hero-municipio {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.hero-municipio img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.hero-texto {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 32px 35px;
+    background: rgba(0, 132, 180, 0.82);
+    color: white;
+}
+
+.hero-texto h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+
+.card-municipio {
+    background: white;
+    padding: 30px;
+    margin-bottom: 28px;
+    border-radius: 22px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card-municipio h2 {
+    color: #004b86;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.card-municipio p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+    text-align: left;
+}
+
+.com-imagem {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    min-height: 230px;
+}
+
+.com-imagem img {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+
+/* Corrige imagem vertical tipo jornal */
+.com-imagem img[alt*="Cultura"] {
+    object-fit: contain;
+    background: #f3f3f3;
+}
+
+/* =========================
+   LIGHTBOX / AMPLIAR IMAGEM
+========================= */
+
+.imagem-ampliavel {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.imagem-ampliavel:hover {
+    transform: scale(1.03);
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#imagem-ampliada {
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 15px;
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.15);
+}
+
+/* =========================
+   RESPONSIVIDADE (MOBILE)
+========================= */
+
+@media (max-width: 900px) {
+    .historia-conteudo {
+        width: 100%;
+    }
+
+    .historia-header,
+    .periodo-card,
+    .mapa-card {
+        padding: 28px;
+    }
+
+    .historia-header h1,
+    .periodo-card h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .pagina-municipio {
+        width: 100%;
+        margin: 25px auto;
+        padding: 0 14px;
+    }
+
+    .hero-municipio img {
+        height: 250px;
+    }
+
+    .hero-texto h1 {
+        font-size: 32px;
+    }
+
+    .hero-texto p {
+        font-size: 17px;
+    }
+
+    .com-imagem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .com-imagem img {
+        width: 100%;
+        height: 230px;
+    }
+}

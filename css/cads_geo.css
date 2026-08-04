@@ -1,0 +1,182 @@
+/* ======================================================
+   ESTILOS GERAIS E RESET
+   ====================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #eef4f7, #f7edf5);
+    color: #333333;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* ======================================================
+   CABEÇALHO (TOPO)
+   ====================================================== */
+
+.topo, header {
+    width: 100%;
+    height: 95px;
+    background: linear-gradient(90deg, #91d3e4, #d6a5c7);
+    border-top: 2px solid #111111;
+    border-bottom: 4px solid #0077b6; /* Borda azul inferior */
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* LIMITAÇÃO RIGOROSA DO TAMANHO DA LOGO */
+.logo-marista, 
+.logo-area img, 
+header img {
+    height: 65px !important;
+    max-height: 65px !important;
+    width: auto !important;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.logo-area h1, 
+header h1 {
+    font-size: 32px;
+    color: #0b4f8f;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* ======================================================
+   CONTAINER E BOTÃO VOLTAR
+   ====================================================== */
+
+.page-container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.btn-container {
+    margin-bottom: 25px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: #00579b;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #003b73;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+}
+
+/* ======================================================
+   CARDS DE CONTEÚDO BRANCOS
+   ====================================================== */
+
+.card-bloco {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 22px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.card-bloco h2 {
+    color: #00579b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-bloco p {
+    font-size: 1rem;
+    color: #444444;
+    margin-bottom: 14px;
+    line-height: 1.7;
+}
+
+.card-bloco p:last-child {
+    margin-bottom: 0;
+}
+
+/* LISTAS DENTRO DOS CARDS */
+.card-bloco ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.card-bloco ul li {
+    font-size: 0.98rem;
+    color: #444444;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.card-bloco ul li::before {
+    content: "•";
+    color: #00579b;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* ======================================================
+   RESPONSIVIDADE (MOBILE)
+   ====================================================== */
+
+@media (max-width: 600px) {
+    .topo, header {
+        padding: 0 15px;
+        height: 80px;
+    }
+
+    .logo-marista, .logo-area img {
+        height: 45px !important;
+        max-height: 45px !important;
+    }
+
+    .logo-area h1, header h1 {
+        font-size: 20px;
+    }
+
+    .page-container {
+        margin: 15px auto;
+        padding: 0 15px;
+    }
+
+    .card-bloco {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .card-bloco h2 {
+        font-size: 1.3rem;
+    }
+}
