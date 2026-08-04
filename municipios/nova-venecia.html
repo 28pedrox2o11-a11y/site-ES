@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Venécia - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Nova Venécia.webp"
+             alt="Paisagem de Nova Venécia"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Nova Venécia</h1>
+            <p>A Capital Nacional do Granito</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Nova Venécia está localizada na região noroeste do Espírito Santo,
+            a aproximadamente 250 km de Vitória. O município desenvolveu-se ao
+            longo do vale do Rio Cricaré e faz divisa com São Mateus, Boa Esperança,
+            Vila Pavão e outras cidades da região.
+        </p>
+
+        <p>
+            O primeiro núcleo de povoamento surgiu em 1870 sob o nome de
+            Serra dos Aimorés. A emancipação política ocorreu em
+            11 de dezembro de 1953, sendo instalada oficialmente
+            em 26 de janeiro de 1954.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Nova Venécia foi escolhido para homenagear a região
+            italiana do Vêneto e a cidade de Veneza, local de origem
+            de muitos dos imigrantes que chegaram ao município no final
+            do século XIX.
+        </p>
+
+        <p>
+            Antes da denominação atual, a localidade foi conhecida como
+            Serra dos Aimorés e posteriormente como Vila de Aimoreslândia.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Nova Venécia.jpeg"
+             alt="História de Nova Venécia"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Nova Venécia está ligada à colonização do
+                interior capixaba e à presença dos povos indígenas Aimorés.
+                O município tornou-se um importante polo econômico regional,
+                impulsionado pela imigração italiana, agricultura e mineração.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                O principal evento cultural do município é a tradicional
+                Festa da Cappitella, que celebra a herança italiana da cidade
+                com apresentações folclóricas, culinária típica, danças,
+                músicas e desfiles de famílias descendentes dos imigrantes.
+            </p>
+
+            <p>
+                A influência italiana permanece presente na arquitetura,
+                gastronomia e nos costumes preservados pela população local.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Nova Venécia.jpg"
+             alt="Cultura de Nova Venécia"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Nova Venécia.jpeg"
+             alt="Estruturas de Nova Venécia"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estão as Casas de Pedra,
+                a região da Gameleira, a Praça Adélio Lubiana
+                e diversos espaços históricos ligados à colonização
+                italiana e ao desenvolvimento urbano do município.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Pedra do Elefante,
+            a Pedra da Fortaleza, a Cachoeira do Cravo,
+            as Casas de Pedra e a escadaria da Gameleira,
+            importantes símbolos naturais e históricos da cidade.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            Nova Venécia é conhecida nacionalmente como a
+            "Capital do Granito", possuindo uma economia
+            fortemente baseada na extração e beneficiamento
+            de rochas ornamentais.
+        </p>
+
+        <p>
+            Também se destacam os setores de serviços,
+            comércio regional, cafeicultura, fruticultura
+            e administração pública.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            O território de Nova Venécia está assentado sobre
+            formações geológicas com cerca de 600 milhões de anos,
+            responsáveis pela grande riqueza mineral encontrada
+            na região.
+        </p>
+
+        <p>
+            A cidade também foi um dos últimos refúgios dos
+            povos indígenas Aimorés (Botocudos), que utilizaram
+            as montanhas e formações rochosas locais como defesa
+            natural durante o período de colonização.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

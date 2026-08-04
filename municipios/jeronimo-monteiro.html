@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerônimo Monteiro - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Jerônimo Monteiro.jpg"
+             alt="Paisagem de Jerônimo Monteiro"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Jerônimo Monteiro</h1>
+            <p>A Terra da Laranja</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Jerônimo Monteiro está localizado na região sul do Espírito Santo,
+            a aproximadamente 184 km de Vitória. O município é considerado uma
+            das portas de entrada para o Caparaó Capixaba e faz divisa com
+            Alegre, Cachoeiro de Itapemirim, Muqui e Mimoso do Sul.
+        </p>
+
+        <p>
+            O desbravamento da região começou por volta de 1820. Durante muitos
+            anos a localidade foi conhecida como Vala de Souza, distrito de
+            Alegre, até conquistar sua emancipação política em 28 de novembro
+            de 1958.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O município recebeu seu nome em homenagem a Jerônimo de Sousa Monteiro,
+            um dos mais importantes governadores da história do Espírito Santo.
+        </p>
+
+        <p>
+            Durante seu governo, entre 1908 e 1912, foram iniciadas importantes
+            obras de modernização do estado, incluindo melhorias na infraestrutura,
+            expansão da energia elétrica e investimentos no Porto de Vitória.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Jerônimo Monteiro.jpg"
+             alt="História de Jerônimo Monteiro"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história do município está diretamente ligada à antiga Estrada
+                de Ferro Caravelas. Os trilhos impulsionaram o crescimento da
+                antiga Vala de Souza, transformando a região em um importante
+                centro comercial do sul capixaba.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A Festa de Emancipação e da Laranja é o principal evento cultural
+                do município. A celebração reúne produtores rurais, apresentações
+                culturais, feiras agrícolas e atrações musicais.
+            </p>
+
+            <p>
+                A cidade também abriga comunidades tradicionais, incluindo a
+                Comunidade Quilombola do Sítio dos Crioulos, que preserva
+                importantes manifestações culturais de origem africana.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Jerônimo Monteiro.jpg"
+             alt="Cultura de Jerônimo Monteiro"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Jerônimo Monteiro.jpg"
+             alt="Estruturas de Jerônimo Monteiro"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estruturais estão o MUSES (Museu de História
+                Natural do Sul do Estado), mantido pela UFES, além de espaços
+                voltados ao turismo rural e à preservação ambiental.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem o MUSES, o Sítio Três Moinhos,
+            as Cachoeiras de Jaguaquara e áreas próximas ao Parque Estadual
+            da Cachoeira da Fumaça.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia de Jerônimo Monteiro é baseada principalmente na
+            citricultura, com destaque para a produção de laranja e limão.
+            O cultivo de café, a pecuária leiteira e o comércio local também
+            possuem papel importante no desenvolvimento econômico do município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            A antiga Estrada de Ferro Caravelas foi fundamental para o crescimento
+            da cidade e marcou profundamente a história local, influenciando o
+            desenvolvimento econômico da região.
+        </p>
+
+        <p>
+            O município também se destaca pela presença de uma comunidade
+            quilombola reconhecida oficialmente, que preserva tradições,
+            culinária e manifestações culturais herdadas de seus antepassados.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

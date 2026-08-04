@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibitirama - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">← Voltar para o mapa</a>
+
+    <section class="hero-municipio">
+        <img src="../fotos/cidades/Ibitirama.jpg" alt="Paisagem de Ibitirama" class="imagem-ampliavel" onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Ibitirama</h1>
+            <p>Terra das Cachoeiras e das Montanhas do Caparaó</p>
+        </div>
+    </section>
+
+    <section class="card-municipio">
+        <h2>Localização e Fundação</h2>
+        <p>
+            Ibitirama situa-se na região do Caparaó, no sul do Espírito Santo. Está em uma área de relevo
+            fortemente montanhoso, a cerca de 220 km de Vitória, fazendo limite com Guaçuí, Alegre,
+            Muniz Freire, Divino de São Lourenço e Iúna.
+        </p>
+        <p>
+            Os primeiros desbravadores chegaram à região por volta de 1820. O povoamento funcionou por
+            décadas como distrito de Caparaó, pertencente a Alegre, até conquistar sua emancipação política
+            em 15 de setembro de 1988.
+        </p>
+    </section>
+
+    <section class="card-municipio">
+        <h2>Origem do Nome</h2>
+        <p>
+            O nome Ibitirama tem origem no tupi-guarani e significa “conjunto de montanhas”,
+            “região de serras” ou “monte alto”. O nome foi adotado oficialmente em 1943,
+            substituindo o antigo nome Vila de Santa Bárbara do Caparaó.
+        </p>
+    </section>
+
+    <section class="card-municipio com-imagem">
+        <img src="../fotos/historia/Ibitirama.webp" alt="História de Ibitirama" class="imagem-ampliavel" onclick="abrirImagem(this)">
+
+        <div>
+            <h2>História</h2>
+            <p>
+                A história de Ibitirama está ligada ao processo de ocupação da região do Caparaó.
+                Seu antigo nome, Santa Bárbara do Caparaó, também revela a forte religiosidade local
+                e a relação da comunidade com o ambiente montanhoso.
+            </p>
+        </div>
+    </section>
+
+    <section class="card-municipio com-imagem">
+        <div>
+            <h2>Cultura</h2>
+            <p>
+                A cultura local valoriza a produção rural, o artesanato, os cafés de altitude,
+                os queijos artesanais e as tradições das famílias do interior. A Feira de Agroindústria
+                e Turismo do Caparaó é um dos principais eventos do município.
+            </p>
+        </div>
+
+        <img src="../fotos/cultura/Ibitirama.jpg" alt="Cultura de Ibitirama" class="imagem-ampliavel" onclick="abrirImagem(this)">
+    </section>
+
+    <section class="card-municipio com-imagem">
+        <img src="../fotos/estruturas/Ibitirama.webp" alt="Estruturas de Ibitirama" class="imagem-ampliavel" onclick="abrirImagem(this)">
+
+        <div>
+            <h2>Estruturas</h2>
+            <p>
+                O município se destaca por estruturas ligadas ao turismo de montanha, ao ecoturismo
+                e às comunidades rurais, além de acessos para áreas naturais importantes do Caparaó.
+            </p>
+        </div>
+    </section>
+
+    <section class="card-municipio">
+        <h2>Pontos Turísticos</h2>
+        <p>
+            Entre os principais atrativos estão o Pico da Bandeira, a região de Pedra Roxa,
+            a Cachoeira do Chiquito, o Poço Limpo, a Cachoeira Água Limpa e o Caldeirão.
+        </p>
+    </section>
+
+    <section class="card-municipio">
+        <h2>Economia</h2>
+        <p>
+            A economia de Ibitirama é baseada na agropecuária, no café arábica de altitude,
+            na pecuária leiteira, na horticultura e no turismo rural. A criação comercial de trutas
+            também aparece como um diferencial econômico do município.
+        </p>
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>

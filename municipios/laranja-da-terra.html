@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laranja da Terra - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Laranja da Terra.jpg"
+             alt="Paisagem de Laranja da Terra"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Laranja da Terra</h1>
+            <p>O Coração Pomerano do Espírito Santo</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Laranja da Terra está localizada na região sudoeste serrana do
+            Espírito Santo, a aproximadamente 150 km de Vitória. O município
+            possui relevo montanhoso e faz divisa com Afonso Cláudio,
+            Itaguaçu, Baixo Guandu, Itarana e Minas Gerais.
+        </p>
+
+        <p>
+            A colonização começou por volta de 1875 com a chegada de imigrantes
+            europeus. Durante décadas pertenceu ao município de Afonso Cláudio,
+            conquistando sua emancipação política em 16 de maio de 1988.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Laranja da Terra surgiu a partir de um córrego da região.
+            Durante o processo de demarcação das terras, exploradores encontraram
+            um pé de laranja de uma variedade rústica que passou a identificar
+            o local.
+        </p>
+
+        <p>
+            Com o passar do tempo, o nome foi utilizado para o córrego,
+            para a vila e posteriormente para o município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Laranja da Terra.jpg"
+             alt="História de Laranja da Terra"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história do município está fortemente ligada à imigração
+                pomerana e alemã. Os colonos que chegaram à região ajudaram
+                a desenvolver a agricultura e preservaram costumes que ainda
+                fazem parte da identidade local.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                Laranja da Terra preserva uma das mais fortes heranças pomeranas
+                do Brasil. O idioma pomerano é amplamente utilizado pela população
+                e possui reconhecimento oficial no município.
+            </p>
+
+            <p>
+                Entre os eventos culturais mais importantes destaca-se a
+                Pommer BroudFest, festa que celebra a cultura pomerana e a
+                produção do tradicional brote, um pão típico da comunidade.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Laranja da Terra.jpg"
+             alt="Cultura de Laranja da Terra"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Laranja da Terra.jpg"
+             alt="Estruturas de Laranja da Terra"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os patrimônios mais importantes estão a Igreja Luterana
+                da Vila de Laranja da Terra, construída em 1910, e diversos
+                cenários rurais preservados que representam a história dos
+                imigrantes da região.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Pedra dos Cinco Pontões,
+            a Igreja Luterana histórica, as paisagens do Rio Guandu
+            e os roteiros rurais cercados por montanhas e vales.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia é baseada no agronegócio familiar. O município destaca-se
+            como um dos maiores produtores capixabas de quiabo e tomate,
+            além da forte produção de café conilon e café arábica.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Uma das histórias mais curiosas do município envolve uma gruta
+            subterrânea construída durante a Segunda Guerra Mundial para servir
+            de esconderijo aos descendentes de alemães em tempos de perseguição.
+        </p>
+
+        <p>
+            Laranja da Terra também é oficialmente reconhecida como a Capital
+            Estadual do Brote, celebrando anualmente uma das maiores festas
+            da cultura pomerana no Espírito Santo.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

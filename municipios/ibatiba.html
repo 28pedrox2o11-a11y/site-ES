@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibatiba - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+        <h1>Nossa História Capixaba</h1>
+    </header>
+
+    <main class="pagina-municipio">
+
+        <a href="../pgs/geografia.html" class="btn-voltar">
+            ← Voltar para o mapa
+        </a>
+
+        <!-- Banner Principal -->
+
+        <section class="hero-municipio">
+
+            <img src="../fotos/cidades/ibatiba.jpg"
+                alt="Letreiro de Ibatiba"
+                class="imagem-ampliavel"
+                onclick="abrirImagem(this)">
+
+            <div class="hero-texto">
+                <h1>Ibatiba</h1>
+                <p>Capital Capixaba dos Tropeiros</p>
+            </div>
+
+        </section>
+
+        <!-- Localização -->
+
+        <section class="card-municipio">
+
+            <h2>Localização e Fundação</h2>
+
+            <p>
+                Ibatiba situa-se na região sudoeste serrana do Espírito Santo,
+                no coração do chamado Polígono do Caparaó. Fica a cerca de
+                160 km de Vitória e está localizada às margens da BR-262,
+                fazendo divisa com Minas Gerais.
+            </p>
+
+            <p>
+                O povoamento começou no final do século XIX, por volta de 1880,
+                com famílias vindas de Minas Gerais, do Rio de Janeiro e
+                descendentes de europeus. Antes da emancipação, era conhecida
+                como Vila Nova e pertencia a Muniz Freire. Tornou-se município
+                em 7 de novembro de 1981.
+            </p>
+
+        </section>
+
+        <!-- Origem -->
+
+        <section class="card-municipio">
+
+            <h2>Origem do Nome</h2>
+
+            <p>
+                O nome Ibatiba tem origem no tupi-guarani e está ligado à ideia
+                de "lugar onde há muitas frutas", "pomar" ou "abundância de frutos".
+                O nome foi adotado oficialmente em 1943, substituindo o antigo
+                nome Vila Nova.
+            </p>
+
+        </section>
+
+        <!-- História -->
+
+        <section class="card-municipio com-imagem">
+
+            <img src="../fotos/historia/ibatiba.jpg"
+                alt="História de Ibatiba"
+                class="imagem-ampliavel"
+                onclick="abrirImagem(this)">
+
+            <div>
+
+                <h2>História</h2>
+
+                <p>
+                    A história de Ibatiba está fortemente ligada às antigas
+                    rotas de tropeiros, que transportavam mercadorias entre
+                    o litoral capixaba e Minas Gerais. Essa memória ainda
+                    marca a identidade cultural do município.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Cultura -->
+
+        <section class="card-municipio com-imagem">
+
+            <div>
+
+                <h2>Cultura</h2>
+
+                <p>
+                    Ibatiba é conhecida como a Terra dos Tropeiros.
+                    A Festa do Tropeiro é o principal evento cultural da cidade,
+                    reunindo desfiles de cavaleiros, música sertaneja de raiz
+                    e a tradicional Feijoada do Tropeiro.
+                </p>
+
+            </div>
+
+            <img src="../fotos/cultura/ibatiba.jpg"
+                alt="Cultura de Ibatiba"
+                class="imagem-ampliavel"
+                onclick="abrirImagem(this)">
+
+        </section>
+
+        <!-- Estruturas -->
+
+        <section class="card-municipio com-imagem">
+
+            <img src="../fotos/estruturas/ibatiba.jpg"
+                alt="Estruturas de Ibatiba"
+                class="imagem-ampliavel"
+                onclick="abrirImagem(this)">
+
+            <div>
+
+                <h2>Estruturas</h2>
+
+                <p>
+                    A cidade conta com espaços urbanos importantes,
+                    como a Praça Municipal Augusto Casagrande,
+                    além de áreas de convivência, lazer e pontos
+                    ligados à memória local.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Turismo -->
+
+        <section class="card-municipio">
+
+            <h2>Pontos Turísticos</h2>
+
+            <p>
+                Entre os principais atrativos estão o Monumento ao Tropeiro,
+                a Cachoeira do Brás, o Mirante do Cruzeiro e os circuitos de
+                agroturismo da região do Caparaó.
+            </p>
+
+        </section>
+
+        <!-- Economia -->
+
+        <section class="card-municipio">
+
+            <h2>Economia</h2>
+
+            <p>
+                A economia de Ibatiba é marcada pelo agronegócio,
+                especialmente pela produção de café conilon.
+                A localização às margens da BR-262 também fortalece
+                o comércio, os postos, hotéis, restaurantes e serviços
+                ligados ao transporte.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- LIGHTBOX -->
+
+    <div id="lightbox" onclick="fecharImagem()">
+        <img id="imagem-ampliada" alt="Imagem ampliada">
+    </div>
+
+    <script>
+
+        function abrirImagem(img) {
+            document.getElementById("lightbox").style.display = "flex";
+            document.getElementById("imagem-ampliada").src = img.src;
+        }
+
+        function fecharImagem() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+
+    </script>
+
+</body>
+
+</html>

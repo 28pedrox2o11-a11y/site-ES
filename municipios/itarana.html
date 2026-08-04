@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itarana - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Itarana.jpg"
+             alt="Paisagem de Itarana"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Itarana</h1>
+            <p>Terra da Pedra do Onze</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Itarana está localizada na região central serrana do Espírito Santo,
+            a aproximadamente 120 km de Vitória. O município faz divisa com
+            Itaguaçu, Santa Teresa, Santa Maria de Jetibá, Afonso Cláudio e
+            Laranja da Terra.
+        </p>
+
+        <p>
+            O povoamento começou por volta de 1879 com a chegada de imigrantes.
+            Durante muitos anos a região pertenceu a Itaguaçu como distrito de
+            Figueira de Santa Joana, conquistando sua emancipação política em
+            13 de dezembro de 1923.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Itarana possui origem tupi-guarani e deriva da união dos
+            termos "itá" (pedra) e "rana" (parecida, falsa ou imitação),
+            significando literalmente "pedra falsa" ou "parecida com pedra".
+        </p>
+
+        <p>
+            A denominação foi inspirada por uma formação rochosa da região que,
+            dependendo da iluminação e do ângulo de observação, aparentava ser
+            uma grande rocha de minerais valiosos.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Itarana.jpg"
+             alt="História de Itarana"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Itarana está ligada ao avanço da colonização
+                europeia na região serrana capixaba. Italianos, pomeranos e
+                alemães contribuíram para o desenvolvimento econômico e cultural
+                da cidade, deixando marcas visíveis até os dias atuais.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                O município preserva tradições herdadas dos imigrantes italianos,
+                alemães e pomeranos, presentes na culinária, nas festas típicas,
+                na arquitetura rural e nos costumes transmitidos entre gerações.
+            </p>
+
+            <p>
+                As comemorações de aniversário da cidade movimentam a região
+                com desfiles, cavalgadas, feiras agrícolas e apresentações
+                culturais.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Itarana.jpg"
+             alt="Cultura de Itarana"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Itarana.jpeg"
+             alt="Estruturas de Itarana"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre as principais estruturas e patrimônios da cidade destacam-se
+                a Igreja Matriz Nossa Senhora Auxiliadora, áreas voltadas ao
+                agroturismo e espaços de convivência que preservam a identidade
+                serrana do município.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos são a Pedra do Onze, a Cachoeira de Santa
+            Terezinha, a Igreja Matriz Nossa Senhora Auxiliadora e os roteiros
+            rurais das comunidades de Sobreiro e Limoeiro.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia de Itarana é baseada no agronegócio familiar, com destaque
+            para a produção de café conilon, café arábica, tomate, hortaliças e
+            pecuária leiteira. O comércio local e os serviços de apoio ao produtor
+            rural também possuem grande importância econômica.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Uma curiosidade histórica relata que Itarana foi uma das primeiras
+            cidades do interior capixaba a receber um automóvel, atraindo a
+            atenção de moradores de toda a região no início do século XX.
+        </p>
+
+        <p>
+            A forte presença de descendentes italianos, alemães e pomeranos
+            continua sendo uma das características culturais mais marcantes
+            do município.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

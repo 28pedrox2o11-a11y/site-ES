@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancas - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Pancas.jpg"
+             alt="Paisagem de Pancas"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Pancas</h1>
+            <p>A Terra dos Pontões Capixabas</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Pancas está localizada na região noroeste do Espírito Santo,
+            a aproximadamente 180 km de Vitória. O município faz divisa
+            com Colatina, Baixo Guandu, Alto Rio Novo, Mantenópolis,
+            Águia Branca e São Domingos do Norte.
+        </p>
+
+        <p>
+            O povoamento começou por volta de 1918 com a chegada de
+            desbravadores e imigrantes. Após muitos anos como distrito
+            de Colatina, conquistou sua emancipação política em
+            11 de maio de 1988.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            A origem do nome Pancas está ligada a uma antiga tradição
+            dos tropeiros que cruzavam a região. Durante as noites,
+            as grandes montanhas de granito emitiam sons causados pela
+            variação de temperatura.
+        </p>
+
+        <p>
+            Os viajantes diziam que as pedras davam "pancas" (pancadas),
+            expressão que acabou dando nome ao córrego local e,
+            posteriormente, ao município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Pancas.jpg"
+             alt="História de Pancas"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Pancas está ligada à ocupação do interior
+                capixaba e ao desenvolvimento das comunidades rurais
+                que se estabeleceram entre os imponentes pontões de granito
+                que caracterizam a paisagem da região.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                Pancas preserva uma forte influência pomerana.
+                Grande parte da população descende de imigrantes
+                europeus e mantém vivas tradições, costumes,
+                culinária típica e até o idioma pomerano.
+            </p>
+
+            <p>
+                A PommerFest é o principal evento cultural da cidade,
+                reunindo danças folclóricas, desfiles, gastronomia
+                tradicional e apresentações ligadas à cultura pomerana.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Pancas.jpg"
+             alt="Cultura de Pancas"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Pancas.jpg"
+             alt="Estruturas de Pancas"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estão o Monumento Natural dos
+                Pontões Capixabas, a Rampa de Voo Livre de Pancas,
+                o Circuito de Tirolesas e diversas estruturas voltadas
+                ao ecoturismo e ao turismo de aventura.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem o Monumento Natural dos
+            Pontões Capixabas, a Pedra do Camelo, a Pedra da Agulha,
+            a Cachoeira do Moacir e a famosa Rampa de Voo Livre.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia local é baseada principalmente na cafeicultura,
+            com destaque para o café conilon produzido pela agricultura
+            familiar. Também possuem importância a pecuária leiteira,
+            o cultivo de milho e feijão, além do comércio local.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Pancas abriga a maior tirolesa da América Latina,
+            com quase 3 quilômetros de extensão, atravessando
+            vales e montanhas com vistas impressionantes dos
+            Pontões Capixabas.
+        </p>
+
+        <p>
+            Mais da metade da população possui origem pomerana,
+            fazendo do município um dos principais centros de
+            preservação da cultura e do idioma pomerano no Brasil.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

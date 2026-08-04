@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irupi - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Irupi.png"
+             alt="Paisagem de Irupi"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Irupi</h1>
+            <p>A Capital Capixaba do Café</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Irupi situa-se na região do Caparaó, no sudoeste do Espírito Santo,
+            a cerca de 190 km de Vitória. O município faz divisa com Minas Gerais,
+            Iúna e Ibatiba.
+        </p>
+
+        <p>
+            O povoamento começou por volta de 1870, intensificando-se com a chegada
+            de famílias mineiras e descendentes de europeus. A região funcionou por
+            décadas como distrito de Cachoeirinha, pertencente a Iúna, até conquistar
+            sua emancipação política em 14 de janeiro de 1991.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Irupi tem origem na língua tupi-guarani. Deriva da união dos
+            termos "i" (água ou rio) e "rupi" (por onde se vai), formando o significado
+            de "rio que fertiliza", "águas que correm" ou "caminho das águas".
+        </p>
+
+        <p>
+            A denominação foi adotada oficialmente em 1943 para substituir o antigo
+            nome colonial de Cachoeirinha.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Irupi.WEBP"
+             alt="História de Irupi"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Irupi está ligada à ocupação da região do Caparaó e
+                ao crescimento das comunidades agrícolas que se estabeleceram em
+                meio às montanhas. A antiga Cachoeirinha tornou-se município no
+                início da década de 1990.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A principal celebração do município é a Festa de Emancipação,
+                realizada todos os anos em janeiro, reunindo shows, rodeios,
+                exposições agropecuárias e eventos ligados à cafeicultura.
+            </p>
+
+            <p>
+                A identidade cultural local também está profundamente ligada ao
+                café e às tradições das famílias produtoras da região serrana.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Irupi.jpg"
+             alt="Cultura de Irupi"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Irupi.jpg"
+             alt="Estruturas de Irupi"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                O município possui infraestrutura voltada ao agronegócio,
+                ao comércio local e ao turismo rural, além de espaços urbanos
+                que atendem a população e visitantes da região do Caparaó.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Entre os principais atrativos estão a Cachoeira do Chiador,
+            a Toca da Onça, o Mirante do Cruzeiro e os circuitos de turismo
+            rural ligados às propriedades produtoras de café.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia de Irupi é fortemente baseada na agricultura familiar,
+            com destaque para o café conilon e os cafés especiais de altitude.
+            O comércio local e os serviços voltados ao produtor rural também
+            possuem grande importância para o município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Irupi possui oficialmente o título de Capital Capixaba do Café,
+            concedido pela Lei Estadual nº 11.233/2021. O município também fez
+            parte da famosa região dos "Cinco Is", formada por Ibatiba,
+            Ibitirama, Iúna, Irupi e Imbuí.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

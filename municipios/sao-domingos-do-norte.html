@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São Domingos do Norte - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/São Domingos do Norte.jpg"
+             alt="Paisagem de São Domingos do Norte"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>São Domingos do Norte</h1>
+            <p>A Terra do Café Conilon e do Cooperativismo</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            São Domingos do Norte está localizado na região
+            noroeste do Espírito Santo, a aproximadamente
+            190 km de Vitória. O município faz divisa com
+            Colatina, Pancas, Águia Branca, São Gabriel da Palha
+            e Governador Lindenberg.
+        </p>
+
+        <p>
+            O povoamento começou por volta de 1920 com a chegada
+            de famílias em busca de terras férteis para a agricultura.
+            Após décadas como distrito de Colatina, conquistou sua
+            emancipação política em 30 de março de 1990.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome do município combina devoção religiosa e
+            localização geográfica. "São Domingos" homenageia
+            São Domingos de Gusmão, padroeiro da cidade.
+        </p>
+
+        <p>
+            O complemento "do Norte" foi adicionado durante
+            a emancipação para diferenciar o município de
+            outras localidades brasileiras com nomes semelhantes.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/São Domingos do Norte.jpg"
+             alt="História de São Domingos do Norte"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história do município está ligada à expansão
+                agrícola do noroeste capixaba, especialmente
+                ao desenvolvimento das pequenas propriedades
+                rurais e da agricultura familiar.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A cultura local apresenta forte influência
+                italiana, refletida na culinária típica,
+                nas festas religiosas e nos costumes
+                preservados pelas famílias do interior.
+            </p>
+
+            <p>
+                A Festa de Emancipação e do Café é o principal
+                evento cultural do município, reunindo shows,
+                exposições agrícolas e atrações voltadas ao
+                agronegócio regional.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/São Domingos do Norte.png"
+             alt="Cultura de São Domingos do Norte"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/São Domingos do Norte.png"
+             alt="Estruturas de São Domingos do Norte"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estão a Igreja Matriz
+                de São Domingos de Gusmão, a Ponte sobre
+                o Rio São José e os roteiros rurais que
+                atravessam as áreas agrícolas do município.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Cachoeira do Bravim,
+            a Igreja Matriz de São Domingos de Gusmão,
+            a Ponte sobre o Rio São José e os roteiros
+            rurais das lavouras de café.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia municipal é fortemente baseada na
+            agricultura familiar, com destaque para a
+            produção de café conilon, uma das principais
+            atividades econômicas da região.
+        </p>
+
+        <p>
+            Também possuem importância a indústria de
+            confecções, o comércio local e as atividades
+            ligadas à extração e beneficiamento de
+            rochas ornamentais.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            São Domingos do Norte possui forte tradição
+            cooperativista, sendo um importante centro
+            de classificação e escoamento de café para
+            diferentes mercados do país.
+        </p>
+
+        <p>
+            A influência italiana permanece presente no
+            cotidiano da população, especialmente na
+            gastronomia, nas festas comunitárias e na
+            hospitalidade típica das famílias do interior.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

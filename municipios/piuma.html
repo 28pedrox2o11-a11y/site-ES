@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piúma - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Piúma.jpg"
+             alt="Paisagem de Piúma"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Piúma</h1>
+            <p>A Capital das Conchas</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Piúma está localizada no litoral sul do Espírito Santo,
+            a aproximadamente 90 km de Vitória. O município faz
+            divisa com Anchieta, Iconha e Itapemirim, sendo banhado
+            pelas águas do Oceano Atlântico.
+        </p>
+
+        <p>
+            Sua história remonta ao ano de 1585, durante os trabalhos
+            de colonização e catequese conduzidos pelo padre José de
+            Anchieta. A emancipação política ocorreu em
+            24 de dezembro de 1963.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Piúma possui origem tupi-guarani e significa
+            "rio das conchas" ou "águas de muitas conchas".
+        </p>
+
+        <p>
+            A denominação foi inspirada no Rio Piúma e nos bancos
+            naturais de areia ricos em conchas que sempre estiveram
+            presentes na região costeira do município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Piúma.jpg"
+             alt="História de Piúma"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                Piúma desenvolveu-se inicialmente como uma comunidade
+                pesqueira e agrícola ligada a Anchieta. Com o passar
+                dos anos, o turismo e o artesanato transformaram-se
+                nos principais símbolos da cidade.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A cultura local está profundamente ligada ao mar,
+                à pesca artesanal e à produção de artesanato feito
+                com conchas marinhas, tradição que tornou a cidade
+                conhecida em todo o Brasil.
+            </p>
+
+            <p>
+                Destacam-se também o Carnaval de Piúma e a Festa das
+                Paneleiras e dos Pescadores, importantes eventos que
+                valorizam as tradições culturais e gastronômicas locais.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Piúma.jpg"
+             alt="Cultura de Piúma"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Piúma.jpg"
+             alt="Estruturas de Piúma"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os principais destaques estão a orla urbana,
+                os centros de artesanato, o calçadão à beira-mar
+                e as estruturas voltadas ao turismo que recebem
+                milhares de visitantes durante o verão.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Praia das Conchas,
+            a Ilha do Gambá, a Ilha dos Cabritos, a Ilha do Meio
+            e as belas paisagens do Monte Aghá, um dos cartões-postais
+            do litoral sul capixaba.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia municipal é baseada no turismo e no artesanato
+            produzido com conchas marinhas, atividade que tornou Piúma
+            famosa nacionalmente.
+        </p>
+
+        <p>
+            O comércio, a hotelaria, os restaurantes e a pesca artesanal
+            também possuem papel importante na geração de empregos e renda.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Piúma possui oficialmente o título de menor município
+            do Espírito Santo em extensão territorial, ocupando
+            pouco mais de 74 km².
+        </p>
+
+        <p>
+            A cidade também é reconhecida como a Capital das Conchas,
+            graças à tradição artesanal que transforma conchas marinhas
+            em peças decorativas comercializadas em todo o país.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

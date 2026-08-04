@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Neiva - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/João Neiva.jpg"
+             alt="Paisagem de João Neiva"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>João Neiva</h1>
+            <p>A Terra dos Violinos</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            João Neiva está localizada na região norte do Espírito Santo,
+            a aproximadamente 81 km de Vitória. O município encontra-se em
+            uma posição estratégica no encontro das rodovias BR-101 e BR-259,
+            fazendo divisa com Aracruz, Ibiraçu, Colatina, Linhares e
+            São Roque do Canaã.
+        </p>
+
+        <p>
+            O povoamento moderno teve início em 1877 com a chegada de famílias
+            italianas. Durante muitos anos a localidade pertenceu a Ibiraçu,
+            conquistando sua emancipação política em 11 de maio de 1988.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O município recebeu seu nome em homenagem ao engenheiro
+            João Augusto Ribeiro Neiva, importante responsável pelas obras
+            de expansão da antiga Estrada de Ferro Vitória a Minas.
+        </p>
+
+        <p>
+            A estação ferroviária construída na região acabou recebendo seu
+            nome e, posteriormente, toda a cidade passou a ser conhecida
+            como João Neiva.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/João Neiva.jpg"
+             alt="História de João Neiva"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de João Neiva está profundamente ligada à ferrovia
+                e à imigração italiana. O crescimento econômico e urbano da
+                região ocorreu graças aos trilhos que conectavam importantes
+                áreas produtoras ao restante do estado.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                João Neiva preserva fortes tradições italianas, especialmente
+                no distrito de Demétrio Ribeiro, onde festas típicas, músicas,
+                culinária tradicional e encenações de antigos casamentos
+                italianos continuam sendo celebradas.
+            </p>
+
+            <p>
+                O município também ganhou destaque nacional através do Instituto
+                Preservarte, responsável pela formação de artesãos especializados
+                na construção de instrumentos de corda.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/João Neiva.jpg"
+             alt="Cultura de João Neiva"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/João Neiva.jpg"
+             alt="Estruturas de João Neiva"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estruturais estão os casarões históricos
+                de Demétrio Ribeiro, a antiga estação ferroviária e diversos
+                espaços voltados ao turismo rural e cultural.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Cachoeira do Piraquê-Açu,
+            a Pedra do Monte Negro, os Casarios Históricos de Demétrio Ribeiro
+            e a famosa Rota dos Imigrantes.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia de João Neiva combina agronegócio, indústria e logística.
+            Destacam-se a produção de café conilon, os queijos artesanais,
+            o setor de rochas ornamentais, a indústria metal-mecânica e o
+            comércio regional.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            João Neiva é conhecida como a Terra dos Violinos por abrigar o
+            Instituto Preservarte, referência na construção e restauração
+            de instrumentos musicais de corda.
+        </p>
+
+        <p>
+            A antiga estação ferroviária continua sendo um importante símbolo
+            da cidade e uma lembrança da época em que os trilhos impulsionaram
+            o crescimento econômico da região.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

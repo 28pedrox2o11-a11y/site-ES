@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itaguaçu - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Itaguaçu.jpg"
+             alt="Paisagem de Itaguaçu"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Itaguaçu</h1>
+            <p>A Terra da Pedra Grande</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Itaguaçu está localizada na Região dos Imigrantes, na região central
+            serrana do Espírito Santo, a aproximadamente 137 km de Vitória.
+            O município faz divisa com Itarana, Baixo Guandu, Colatina,
+            Marilândia, São Roque do Canaã e Santa Teresa.
+        </p>
+
+        <p>
+            O povoamento moderno começou por volta de 1875. O território foi
+            desmembrado de Afonso Cláudio e sua emancipação política ocorreu
+            oficialmente em 17 de fevereiro de 1915.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Itaguaçu tem origem na língua tupi-guarani e resulta da união
+            dos termos "ita" (pedra) e "guaçu" (grande), significando
+            literalmente "pedra grande".
+        </p>
+
+        <p>
+            A denominação foi inspirada na imponente Pedra do Barro Preto,
+            uma gigantesca formação rochosa que se tornou símbolo do município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Itaguaçu.jpg"
+             alt="História de Itaguaçu"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Itaguaçu está ligada à chegada de imigrantes
+                europeus, especialmente italianos e pomeranos, que contribuíram
+                para o desenvolvimento da agricultura, da cultura local e das
+                comunidades rurais que formaram o município.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                O município preserva fortes influências italianas e pomeranas,
+                visíveis na arquitetura, na culinária típica, nas festas
+                religiosas e nas tradições familiares transmitidas ao longo
+                das gerações.
+            </p>
+
+            <p>
+                A Igreja Matriz Nossa Senhora Medianeira destaca-se como um dos
+                principais símbolos culturais e religiosos da cidade.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Itaguaçu.jpg"
+             alt="Cultura de Itaguaçu"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Itaguaçu.jpg"
+             alt="Estruturas de Itaguaçu"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                O município possui diversas estruturas voltadas ao turismo rural
+                e ecológico, além de áreas urbanas organizadas e comunidades
+                históricas que preservam o patrimônio cultural local.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Entre os principais atrativos estão a Pedra dos Cinco Pontões,
+            a Pedra do Barro Preto, a Pedra Paulista e as Cachoeiras
+            Christófari e Tesch, que atraem visitantes de todo o estado.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia de Itaguaçu é fortemente baseada na agricultura,
+            especialmente na produção de café conilon e café arábica.
+            O cultivo de milho, feijão e a pecuária leiteira também possuem
+            grande importância para o município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Uma das histórias mais conhecidas da cidade é a lenda da grande
+            figueira às margens do Rio Santa Joana, local onde os primeiros
+            desbravadores teriam descansado antes da formação do povoado.
+        </p>
+
+        <p>
+            A presença de descendentes italianos e pomeranos ajudou a construir
+            uma identidade cultural única, preservada até hoje por meio das
+            tradições, da culinária e das celebrações religiosas.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>

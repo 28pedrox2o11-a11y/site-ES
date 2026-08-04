@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaguaré - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Jaguaré.jpg"
+             alt="Paisagem de Jaguaré"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Jaguaré</h1>
+            <p>Potência Agrícola do Norte Capixaba</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Jaguaré está localizado na região norte do Espírito Santo,
+            a aproximadamente 201 km de Vitória. O município faz divisa
+            com São Mateus, Vila Valério, Sooretama e Linhares.
+        </p>
+
+        <p>
+            A ocupação moderna teve início na década de 1940 com a chegada
+            de famílias de colonos. O município conquistou sua emancipação
+            política em 13 de dezembro de 1981, quando foi desmembrado de
+            São Mateus.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Jaguaré está ligado a uma espécie de capim abundante
+            encontrada pelos pioneiros nas proximidades de uma lagoa da região.
+            O primeiro núcleo urbano recebeu o nome de Lagoa do Jaguaré,
+            que posteriormente foi simplificado para Jaguaré.
+        </p>
+
+        <p>
+            Embora a palavra tenha origem tupi associada ao termo "onça",
+            a denominação do município capixaba está relacionada à vegetação
+            existente na área durante o processo de colonização.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Jaguaré.jpg"
+             alt="História de Jaguaré"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Jaguaré começou com a chegada de famílias vindas
+                principalmente da região de Jaciguá, em Castelo. Esses pioneiros
+                enfrentaram a mata fechada e ajudaram a construir as bases do
+                desenvolvimento agrícola que transformou o município.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A principal celebração cultural do município é a Festa do
+                Produtor Rural, evento que reúne exposições agrícolas,
+                rodeios, apresentações culturais e shows que atraem visitantes
+                de toda a região norte do Espírito Santo.
+            </p>
+
+            <p>
+                A influência da imigração italiana ainda pode ser percebida
+                na culinária, nos costumes familiares e nas tradições rurais
+                preservadas pela população local.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Jaguaré.jpg"
+             alt="Cultura de Jaguaré"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Jaguaré.jpg"
+             alt="Estruturas de Jaguaré"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques urbanos estão a Igreja Matriz de São Cipriano,
+                as barragens de Água Limpa e São Geraldo e os espaços públicos
+                que contribuem para a qualidade de vida da população.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Cachoeira do Bereco,
+            o Vale do Rio Barra Seca, a Igreja Matriz de São Cipriano
+            e as barragens de Água Limpa e São Geraldo.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia de Jaguaré é fortemente baseada no agronegócio.
+            O município destaca-se como um dos maiores produtores de café
+            conilon do Espírito Santo, além da produção de pimenta-do-reino,
+            mamão e outras frutas tropicais voltadas para o mercado nacional
+            e internacional.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Uma característica curiosa de Jaguaré é o sistema de alto-falantes
+            espalhados pelo centro da cidade, que transmite músicas e avisos
+            comunitários ao longo do dia, criando um ambiente acolhedor para
+            moradores e visitantes.
+        </p>
+
+        <p>
+            A cidade também se destaca por sua forte tradição agrícola e pelo
+            espírito empreendedor que impulsiona o desenvolvimento da região.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São Gabriel da Palha - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/São Gabriel da Palha.jpeg"
+             alt="Paisagem de São Gabriel da Palha"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>São Gabriel da Palha</h1>
+            <p>A Capital Nacional do Café Conilon</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            São Gabriel da Palha está localizado na região
+            noroeste do Espírito Santo, a aproximadamente
+            212 km de Vitória. O município faz divisa com
+            Nova Venécia, Águia Branca, Vila Valério e
+            São Domingos do Norte.
+        </p>
+
+        <p>
+            O povoamento começou em 1927 sob liderança de
+            Bertolo Malacarne. Após funcionar como distrito
+            de Colatina, conquistou sua emancipação política
+            em 21 de fevereiro de 1963.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome "São Gabriel" surgiu em homenagem ao
+            Arcanjo Gabriel, já que Bertolo Malacarne chegou
+            à região em um dia dedicado ao santo.
+        </p>
+
+        <p>
+            O complemento "da Palha" faz referência às primeiras
+            moradias construídas pelos colonizadores, que eram
+            cobertas com palha de coco e se destacavam na paisagem.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/São Gabriel da Palha.jpg"
+             alt="História de São Gabriel da Palha"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                O desenvolvimento do município esteve ligado à
+                colonização agrícola do noroeste capixaba e ao
+                crescimento das propriedades rurais dedicadas
+                principalmente ao cultivo do café.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A cultura local reflete a influência de imigrantes
+                italianos, alemães e poloneses, perceptível na
+                culinária, religiosidade, festas populares e
+                tradições familiares preservadas ao longo das gerações.
+            </p>
+
+            <p>
+                A Festa do Café Conilon é o principal evento cultural
+                do município, reunindo rodeios, shows, exposições
+                agrícolas e demonstrações de tecnologia voltadas
+                para o agronegócio.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/São Gabriel da Palha.jpg"
+             alt="Cultura de São Gabriel da Palha"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/São Gabriel da Palha.webp"
+             alt="Estruturas de São Gabriel da Palha"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estão a Praça do Colono,
+                a Praça Aurélio Bastianello e diversas áreas
+                urbanas decoradas com mosaicos coloridos,
+                que se tornaram uma marca registrada da cidade.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem o Parque da Ilha,
+            a Praça do Colono, a Praça Aurélio Bastianello
+            e a Pedra de São João, localizada no distrito
+            de Fartura.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            São Gabriel da Palha é reconhecida nacionalmente
+            como uma das maiores referências na produção de
+            café conilon, atividade liderada pela Cooabriel,
+            considerada a maior cooperativa de café conilon
+            do Brasil.
+        </p>
+
+        <p>
+            O município também possui um importante polo da
+            indústria de confecções, sendo um dos maiores
+            produtores de roupas e artigos têxteis do
+            Espírito Santo.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            São Gabriel da Palha é conhecida como a Cidade
+            dos Mosaicos, graças às diversas obras artísticas
+            espalhadas por praças, monumentos e espaços públicos.
+        </p>
+
+        <p>
+            A forte mistura de descendentes italianos,
+            alemães e poloneses ajudou a construir uma
+            identidade cultural rica e diversificada,
+            preservada até os dias atuais.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

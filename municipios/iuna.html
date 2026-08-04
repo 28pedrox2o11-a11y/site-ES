@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iúna - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Iúna.jpg"
+             alt="Paisagem de Iúna"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Iúna</h1>
+            <p>A Capital do Caparaó</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Iúna está localizada na região do Caparaó, no sudoeste do Espírito Santo,
+            a cerca de 183 km de Vitória. O município encontra-se próximo ao Parque
+            Nacional do Caparaó e faz divisa direta com Minas Gerais.
+        </p>
+
+        <p>
+            O povoamento teve início por volta de 1815 com a chegada de desbravadores
+            mineiros e antigos militares. O município foi oficialmente criado em
+            24 de outubro de 1890, tornando-se um dos mais tradicionais da região.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Iúna tem origem na língua tupi-guarani e resulta da união dos
+            termos "y" (água ou rio) e "una" (preto ou escuro), significando
+            literalmente "rio preto" ou "águas escuras".
+        </p>
+
+        <p>
+            A denominação foi inspirada no Rio Pardo, cujas águas apresentam
+            tonalidade mais escura devido às características naturais do leito.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Iúna.jpg"
+             alt="História de Iúna"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Iúna está ligada à ocupação do Caparaó e à antiga
+                Rota Imperial São Pedro de Alcântara, importante caminho utilizado
+                para conectar o litoral capixaba às regiões mineradoras de Minas Gerais.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A cultura local é marcada pelas tradições do interior serrano,
+                pela religiosidade e pelas histórias populares transmitidas entre
+                gerações. Entre elas destaca-se a famosa lenda de São Farão,
+                personagem folclórico bastante conhecido na região.
+            </p>
+
+            <p>
+                As festividades locais também valorizam o café, a música regional
+                e as tradições das famílias produtoras do Caparaó.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Iúna.png"
+             alt="Cultura de Iúna"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Iúna.jpg"
+             alt="Estruturas de Iúna"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os principais patrimônios urbanos destacam-se a Igreja
+                Matriz de Nossa Senhora da Guia e as estruturas voltadas para
+                o turismo rural, ecológico e religioso que movimentam o município.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Entre os principais atrativos estão Hidrolândia, o Poço do Egito,
+            a Cachoeira do Rio Claro e diversas paisagens naturais que fazem
+            parte da região do Caparaó.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia de Iúna é fortemente baseada na produção de cafés especiais
+            de altitude, reconhecidos nacionalmente e exportados para diversos países.
+            O turismo rural e ecológico também possui grande importância econômica.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Iúna é conhecida como a Capital do Caparaó por sua importância histórica
+            para a formação dos municípios da região. Grande parte das cidades do
+            entorno teve origem em seu antigo território.
+        </p>
+
+        <p>
+            O município também preserva memórias da antiga Rota Imperial e das
+            histórias populares ligadas ao lendário São Farão, figura marcante
+            do imaginário local.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

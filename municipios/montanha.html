@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montanha - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Montanha.jpg"
+             alt="Paisagem de Montanha"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Montanha</h1>
+            <p>A Capital Estadual da Carne de Sol</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Montanha está localizada no extremo norte do Espírito Santo,
+            a aproximadamente 330 km de Vitória. O município faz divisa com
+            Pinheiros, Mucurici, Ponto Belo e Pedro Canário, além de possuir
+            fronteira com o estado de Minas Gerais.
+        </p>
+
+        <p>
+            O primeiro povoamento surgiu por volta de 1949 com a chegada de
+            madeireiros baianos. Inicialmente distrito de Mucurici, conquistou
+            sua emancipação política em 28 de dezembro de 1963, sendo instalado
+            oficialmente em 16 de abril de 1964.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Montanha está ligado ao antigo Córrego Montanha, onde os
+            primeiros moradores se estabeleceram. O curso d'água recebeu esse
+            nome devido às nascentes escondidas entre grandes formações rochosas
+            que cercavam a região.
+        </p>
+
+        <p>
+            Antes da denominação atual, a localidade foi conhecida como
+            Comercinho da Palha e também como Governador Jones dos Santos Neves.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Montanha.jpg"
+             alt="História de Montanha"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Montanha está relacionada ao avanço da ocupação
+                do extremo norte capixaba durante o século XX. O município
+                cresceu rapidamente graças à atividade madeireira e ao
+                desenvolvimento da agropecuária.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                O principal evento cultural do município é o tradicional
+                Festival da Carne de Sol, que reúne gastronomia, rodeios,
+                apresentações musicais e concursos culinários voltados à
+                valorização da culinária local.
+            </p>
+
+            <p>
+                A cultura de Montanha também é marcada pelas tradições rurais,
+                pela pecuária e pela influência dos pioneiros vindos da Bahia
+                e de Minas Gerais.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Montanha.webp"
+             alt="Cultura de Montanha"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Montanha.jpg"
+             alt="Estruturas de Montanha"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os principais espaços urbanos destacam-se a Praça Osvaldo
+                Lopes, áreas de lazer comunitárias e diversos mirantes naturais
+                formados pelos grandes morros de pedra que cercam a região.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Cachoeira da Pedreira,
+            a Praça Osvaldo Lopes e os diversos inselbergs e mirantes naturais
+            espalhados pelo município, muito procurados por fotógrafos e
+            praticantes de cicloturismo.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia é baseada principalmente na agropecuária, com destaque
+            para a bovinocultura de corte e leite, a produção de mandioca e
+            o cultivo de café conilon. Os setores de serviços, comércio e
+            administração pública também possuem forte participação econômica.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Montanha possui oficialmente o título de Capital Estadual da Carne
+            de Sol, reconhecimento concedido pela Lei Estadual nº 10.421/2015.
+            O prato tornou-se um dos principais símbolos gastronômicos da cidade.
+        </p>
+
+        <p>
+            Um fato curioso da história local é que a primeira instituição
+            religiosa organizada do município foi uma igreja Batista fundada
+            em 1953, algo incomum em uma região onde predominavam comunidades
+            católicas.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

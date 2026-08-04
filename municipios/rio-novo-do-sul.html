@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Novo do Sul - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Rio Novo do Sul.jpg"
+             alt="Paisagem de Rio Novo do Sul"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Rio Novo do Sul</h1>
+            <p>Entre o Mar e as Montanhas do Sul Capixaba</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Rio Novo do Sul está localizado no litoral sul do
+            Espírito Santo, a aproximadamente 90 km de Vitória.
+            O município é cortado pela BR-101 e faz divisa com
+            Anchieta, Iconha, Piúma, Itapemirim, Vargem Alta
+            e Cachoeiro de Itapemirim.
+        </p>
+
+        <p>
+            Sua colonização começou oficialmente em
+            30 de dezembro de 1854 com a criação da
+            Colônia de Rio Novo. A emancipação política
+            foi oficializada em 23 de novembro de 1893.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Rio Novo do Sul surgiu a partir do
+            Rio Novo, curso d'água que delimita parte
+            das fronteiras naturais do município.
+        </p>
+
+        <p>
+            O complemento "do Sul" foi acrescentado em
+            1953 para diferenciar a cidade de outros
+            municípios brasileiros que possuíam o mesmo nome.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Rio Novo do Sul.jpg"
+             alt="História de Rio Novo do Sul"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                Rio Novo do Sul teve papel importante no
+                processo de colonização do sul capixaba,
+                recebendo imigrantes europeus e tornando-se
+                um dos núcleos agrícolas mais relevantes
+                da região durante os séculos XIX e XX.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A cultura local possui forte influência
+                italiana, perceptível na culinária,
+                nas tradições familiares, no sotaque
+                e nas propriedades de agroturismo
+                espalhadas pelo interior do município.
+            </p>
+
+            <p>
+                A Festa de Emancipação Política é o principal
+                evento cultural da cidade, reunindo rodeios,
+                apresentações folclóricas e shows regionais.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Rio Novo do Sul.jpg"
+             alt="Cultura de Rio Novo do Sul"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Rio Novo do Sul.jpg"
+             alt="Estruturas de Rio Novo do Sul"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estão a Gruta de Nossa Senhora
+                de Fátima, o Mirante do Cruzeiro e diversos
+                espaços voltados ao turismo rural e religioso.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Cachoeira
+            Baixo Mundo Novo, a Cachoeira Cascatinha,
+            a Cachoeira da Concórdia, a Cachoeira do Adelino
+            e o Mirante do Cruzeiro.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia municipal é baseada principalmente
+            na agricultura familiar, com destaque para
+            a produção de café conilon, hortaliças,
+            banana e outras frutas.
+        </p>
+
+        <p>
+            Também possuem importância econômica o comércio,
+            os serviços logísticos ligados à BR-101 e a
+            extração de rochas ornamentais.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Rio Novo do Sul é reconhecido por sua forte
+            herança italiana, preservada em receitas,
+            tradições familiares e empreendimentos de
+            agroturismo espalhados pela zona rural.
+        </p>
+
+        <p>
+            A Gruta de Nossa Senhora de Fátima é um dos
+            locais mais queridos pelos moradores, reunindo
+            fé, história e uma fonte natural de água
+            considerada símbolo da comunidade local.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

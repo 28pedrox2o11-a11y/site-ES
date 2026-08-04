@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marilândia - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Marilândia.jpg"
+             alt="Paisagem de Marilândia"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Marilândia</h1>
+            <p>A Terra de Maria e do Café Conilon</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Marilândia está localizada na região noroeste do Espírito Santo,
+            inserida na bacia hidrográfica do Rio Doce. O município encontra-se
+            a aproximadamente 147 km de Vitória e faz divisa com Colatina,
+            Linhares e Governador Lindenberg.
+        </p>
+
+        <p>
+            A colonização começou por volta de 1920, intensificando-se com a
+            chegada de famílias de colonos a partir de 1925. Durante décadas,
+            permaneceu como distrito de Colatina, conquistando sua emancipação
+            política em 15 de maio de 1980.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Marilândia possui origem religiosa e foi sugerido por padres
+            salesianos durante as missões realizadas na região.
+        </p>
+
+        <p>
+            O significado é "Terra de Maria", em homenagem à devoção católica
+            local e à escolha de Nossa Senhora Auxiliadora como padroeira
+            oficial do município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Marilândia.jpg"
+             alt="História de Marilândia"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                O processo de ocupação de Marilândia ocorreu relativamente tarde,
+                devido à presença das densas florestas da Mata Atlântica e à
+                resistência dos povos indígenas Botocudos, que habitavam a região
+                antes da chegada dos colonizadores.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A cultura local é fortemente marcada pela influência italiana.
+                Tradições familiares, culinária típica, festas religiosas e
+                manifestações culturais preservam a herança dos imigrantes que
+                ajudaram a construir o município.
+            </p>
+
+            <p>
+                As festividades de emancipação realizadas em maio são os maiores
+                eventos culturais da cidade, reunindo rodeios, shows e feiras
+                ligadas à produção agrícola.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Marilândia.jpeg"
+             alt="Cultura de Marilândia"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Marilândia.jpg"
+             alt="Estruturas de Marilândia"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os principais destaques estão o Cruzeiro de Alto Liberdade,
+                a Fazenda Clube Marilândia, áreas de lazer aquático e diversos
+                espaços voltados ao turismo rural e religioso.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem o Cruzeiro de Alto Liberdade,
+            a Cabana Água Viva, a Bica Encanto das Águas, a Fazenda Clube
+            Marilândia e a Lagoa do Batista.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia do município é fortemente baseada no agronegócio,
+            especialmente na produção de café conilon. Também se destacam
+            o cultivo de milho, feijão, a pecuária leiteira e o comércio
+            ligado à agricultura familiar.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Cerca de 90% das famílias pioneiras de Marilândia possuíam origem
+            italiana, influência que permanece viva na gastronomia, nas festas
+            tradicionais e nos costumes da população.
+        </p>
+
+        <p>
+            O município também preserva a memória da resistência indígena dos
+            Botocudos, que por muitos anos impediram o avanço da colonização
+            sobre a região do vale do Rio Doce.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

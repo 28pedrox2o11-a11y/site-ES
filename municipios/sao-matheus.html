@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São Mateus - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/São Mateus.jpg"
+             alt="Paisagem de São Mateus"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>São Mateus</h1>
+            <p>O Município-Mãe do Norte Capixaba</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            São Mateus está localizada no litoral norte do Espírito Santo,
+            a aproximadamente 220 km de Vitória. O município faz divisa
+            com Conceição da Barra, Linhares, Jaguaré, Nova Venécia,
+            Vila Pavão e Pinheiros.
+        </p>
+
+        <p>
+            É uma das cidades mais antigas do Brasil. Seu povoamento
+            começou em 21 de setembro de 1544. Foi elevada à categoria
+            de vila em 1764 e emancipou-se definitivamente em
+            3 de abril de 1848.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            A localidade era inicialmente conhecida como Povoado
+            do Cricaré.
+        </p>
+
+        <p>
+            Em 1566, o padre José de Anchieta visitou a região.
+            Como sua chegada ocorreu em 21 de setembro, dia dedicado
+            a São Mateus Evangelista, decidiu homenagear o santo,
+            dando origem ao nome atual do município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/São Mateus.jpg"
+             alt="História de São Mateus"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                São Mateus desempenhou papel fundamental na colonização
+                do norte capixaba. Durante séculos, seu porto fluvial
+                foi um dos mais importantes da região, impulsionando
+                o comércio e o desenvolvimento econômico do Espírito Santo.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A cultura mateense reúne influências indígenas,
+                africanas e europeias, formando uma das identidades
+                culturais mais ricas do Espírito Santo.
+            </p>
+
+            <p>
+                O Carnaval de Guriri é um dos maiores do estado,
+                atraindo milhares de turistas todos os anos para
+                os blocos, shows e trios elétricos do litoral norte.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/São Mateus.jpg"
+             alt="Cultura de São Mateus"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/São Mateus.jpg"
+             alt="Estruturas de São Mateus"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os principais destaques estão o Sítio Histórico
+                do Casario do Porto, a Igreja Velha, a Ilha de Guriri
+                e a infraestrutura universitária composta por unidades
+                da UFES e do IFES.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Praia de Guriri,
+            a Praia de Barra Nova, a Praia de Uruçuquara,
+            o Casario Histórico do Porto, a Igreja Velha
+            e as áreas protegidas monitoradas pelo Projeto Tamar.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            São Mateus possui uma das economias mais fortes do
+            Espírito Santo. Destacam-se a exploração de petróleo
+            e gás natural, a indústria, a produção de ônibus,
+            o comércio regional e o agronegócio.
+        </p>
+
+        <p>
+            O município também é referência na produção de
+            café conilon, mamão e pimenta-do-reino, além de
+            funcionar como importante polo universitário e
+            de prestação de serviços do norte capixaba.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            São Mateus possui a maior população autodeclarada
+            negra do Espírito Santo, resultado de sua forte
+            herança histórica e cultural afro-brasileira.
+        </p>
+
+        <p>
+            O território original do município era gigantesco
+            e deu origem a 19 cidades do norte e noroeste
+            capixaba, motivo pelo qual São Mateus é conhecida
+            como o "Município-Mãe" da região.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>

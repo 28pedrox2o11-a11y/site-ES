@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mucurici - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Mucurici.jpg"
+             alt="Paisagem de Mucurici"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Mucurici</h1>
+            <p>O Portal do Extremo Norte Capixaba</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Mucurici está localizado no extremo norte do Espírito Santo,
+            a aproximadamente 353 km de Vitória. O município faz divisa com
+            Ponto Belo, Montanha e Ecoporanga, além de limitar-se diretamente
+            com Minas Gerais e estar próximo da Bahia.
+        </p>
+
+        <p>
+            O povoamento começou no início do século XX com a chegada de
+            pioneiros baianos atraídos pelas terras férteis da região.
+            Sua emancipação política ocorreu em 29 de dezembro de 1953,
+            sendo oficialmente instalada em 15 de janeiro de 1954.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Mucurici possui origem tupi-guarani e significa,
+            segundo a interpretação mais aceita, "fileira de bacurizeiros".
+        </p>
+
+        <p>
+            Antes da adoção do nome atual, a localidade era conhecida como
+            Comercinho. A denominação indígena foi proposta pelo deputado
+            Floriano Rubin para homenagear as árvores nativas que cobriam
+            a região.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Mucurici.jpg"
+             alt="História de Mucurici"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Mucurici está ligada à ocupação do extremo norte
+                capixaba e às antigas disputas territoriais entre Espírito Santo,
+                Minas Gerais e Bahia. Essas questões ajudaram a moldar a identidade
+                cultural da população local.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                Um dos eventos culturais mais tradicionais do município é a
+                Festa de São João de Itabaiana, realizada anualmente com
+                apresentações musicais, comidas típicas, fogueiras e atividades
+                ligadas à cultura rural.
+            </p>
+
+            <p>
+                A localização estratégica próxima a Minas Gerais e Bahia fez
+                surgir uma cultura única que mistura costumes, sotaques e
+                tradições dos três estados.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Mucurici.jpg"
+             alt="Cultura de Mucurici"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Mucurici.jpg"
+             alt="Estruturas de Mucurici"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os principais destaques estão o Balneário de Mucurici,
+                conhecido como "A Prainha", além do Museu do Contestado,
+                importante espaço dedicado à preservação da memória regional.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem o Balneário de Mucurici,
+            a Bacia do Rio Itaúnas e o Museu do Contestado, que preserva
+            documentos e objetos relacionados à história da região.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia é baseada principalmente na agropecuária, com destaque
+            para a bovinocultura de corte e leite, a produção de café conilon
+            e lavouras de milho, feijão e mandioca. O setor público também
+            possui grande importância na geração de empregos.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            O primeiro nome do município foi Comercinho, devido ao pequeno
+            comércio de peles de animais silvestres que movimentava a economia
+            local durante as primeiras décadas de ocupação.
+        </p>
+
+        <p>
+            Mucurici guarda até hoje marcas históricas das disputas de fronteira
+            entre Espírito Santo, Minas Gerais e Bahia, fator que contribuiu
+            para a formação de uma identidade cultural bastante singular.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

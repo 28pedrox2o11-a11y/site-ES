@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibiraçu - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+        <h1>Nossa História Capixaba</h1>
+    </header>
+
+    <main class="pagina-municipio">
+
+        <a href="../pgs/geografia.html" class="btn-voltar">← Voltar para o mapa</a>
+
+        <section class="hero-municipio">
+            <img src="../fotos/cidades/Ibiraçu.png" alt="Cachoeira em Ibiraçu" class="imagem-ampliavel" onclick="abrirImagem(this)">
+
+            <div class="hero-texto">
+                <h1>Ibiraçu</h1>
+                <p>Terra do Grande Buda e Capital Estadual do Pastel e Caldo de Cana</p>
+            </div>
+        </section>
+
+        <section class="card-municipio">
+            <h2>Localização e Fundação</h2>
+
+            <p>
+                Ibiraçu situa-se na região norte do Espírito Santo, pertencente à Região dos Imigrantes.
+                Fica a cerca de 80 km de Vitória e está localizado às margens da BR-101, fazendo divisa
+                com Aracruz, João Neiva, Santa Teresa e Fundão.
+            </p>
+
+            <p>
+                O povoamento começou oficialmente em 1877, impulsionado pela chegada de cerca de
+                330 famílias de imigrantes italianos vindos da região de Gênova. O município conquistou
+                sua emancipação política em 11 de setembro de 1891.
+            </p>
+        </section>
+
+        <section class="card-municipio">
+            <h2>Origem do Nome</h2>
+
+            <p>
+                O nome Ibiraçu tem origem indígena, vindo da união dos termos tupi-guarani
+                <strong>ybyrá</strong>, que significa árvore ou madeira, e <strong>assu</strong>, que significa grande.
+                Assim, Ibiraçu significa “árvore grande” ou “pau gigante”.
+            </p>
+
+            <p>
+                Antes do nome atual, a cidade teve outras denominações, como Núcleo Colonial de Santa Cruz,
+                Conde D'Eu, Bocaiúva, Vila Guaraná e Pau Gigante.
+            </p>
+        </section>
+
+        <section class="card-municipio com-imagem">
+            <img src="../fotos/historia/Ibiraçu.jpg" alt="História de Ibiraçu" class="imagem-ampliavel" onclick="abrirImagem(this)">
+
+            <div>
+                <h2>História</h2>
+
+                <p>
+                    A história de Ibiraçu está ligada à imigração italiana e ao desenvolvimento de antigas
+                    comunidades rurais. O nome da cidade também guarda memória da natureza local, em referência
+                    a uma grande árvore que se destacava na paisagem durante o período de formação do povoado.
+                </p>
+            </div>
+        </section>
+
+        <section class="card-municipio com-imagem">
+            <div>
+                <h2>Cultura</h2>
+
+                <p>
+                    Ibiraçu é conhecida como a Capital Estadual do Pastel e do Caldo de Cana. A tradição surgiu
+                    pela grande circulação de viajantes na BR-101, tornando a parada na cidade uma experiência
+                    típica para quem cruza o Espírito Santo.
+                </p>
+
+                <p>
+                    Além disso, a herança italiana permanece viva nas festas, na culinária, na produção artesanal
+                    e nas tradições das famílias que ajudaram a formar o município.
+                </p>
+            </div>
+
+            <img src="../fotos/cultura/Ibiraçu.jpg" alt="Festival do Pastel e Caldo de Cana em Ibiraçu" class="imagem-ampliavel" onclick="abrirImagem(this)">
+        </section>
+
+        <section class="card-municipio com-imagem">
+            <img src="../fotos/estruturas/Ibiraçu.jpg" alt="Grande Buda de Ibiraçu" class="imagem-ampliavel" onclick="abrirImagem(this)">
+
+            <div>
+                <h2>Estruturas</h2>
+
+                <p>
+                    Um dos maiores símbolos de Ibiraçu é a Estátua do Grande Buda, localizada na Praça Torii,
+                    às margens da BR-101. O monumento é um dos principais cartões-postais do município e atrai
+                    visitantes de várias regiões.
+                </p>
+            </div>
+        </section>
+
+        <section class="card-municipio">
+            <h2>Pontos Turísticos</h2>
+
+            <p>
+                Entre os principais atrativos estão o Grande Buda de Ibiraçu, o Mosteiro Zen Morro da Vargem,
+                o Santuário Diocesano de Nossa Senhora da Saúde e a Cachoeira Cascata de Ibiraçu.
+            </p>
+        </section>
+
+        <section class="card-municipio">
+            <h2>Economia</h2>
+
+            <p>
+                A economia de Ibiraçu é marcada pelo setor de serviços, pelo comércio ligado à BR-101,
+                pela agroindústria familiar, pela cafeicultura, pela pecuária leiteira e pela produção de
+                alimentos artesanais de tradição italiana.
+            </p>
+        </section>
+
+    </main>
+
+    <div id="lightbox" onclick="fecharImagem()">
+        <img id="imagem-ampliada" alt="Imagem ampliada">
+    </div>
+
+    <script>
+        function abrirImagem(img) {
+            document.getElementById("lightbox").style.display = "flex";
+            document.getElementById("imagem-ampliada").src = img.src;
+        }
+
+        function fecharImagem() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

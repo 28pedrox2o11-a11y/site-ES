@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muniz Freire - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Muniz Freire.jpg"
+             alt="Paisagem de Muniz Freire"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Muniz Freire</h1>
+            <p>O Coração Cafeeiro do Caparaó</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Muniz Freire está localizada na região do Caparaó,
+            no sul do Espírito Santo, a aproximadamente 170 km
+            de Vitória. O município possui relevo montanhoso e
+            faz divisa com Alegre, Castelo, Conceição do Castelo,
+            Iúna e Ibitirama.
+        </p>
+
+        <p>
+            O povoamento começou em 1846 com a chegada de
+            desbravadores mineiros e fluminenses em busca de
+            terras férteis. Sua emancipação política foi
+            oficializada em 27 de maio de 1891.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O município recebeu esse nome em homenagem ao
+            Dr. José de Melo Carvalho Muniz Freire, um dos
+            governadores mais importantes da história do
+            Espírito Santo durante a transição do Império
+            para a República.
+        </p>
+
+        <p>
+            Antes da denominação atual, a localidade foi
+            conhecida como São Sebastião do Rio Pardo e,
+            posteriormente, Espírito Santo do Rio Pardo.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Muniz Freire.jpg"
+             alt="História de Muniz Freire"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Muniz Freire está ligada à expansão
+                agrícola do sul capixaba e ao ciclo do café.
+                Durante décadas, o município exerceu grande
+                influência regional, servindo como território de
+                origem para a criação de diversos municípios
+                vizinhos do Caparaó.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A Festa de São Sebastião é a principal celebração
+                cultural e religiosa do município, reunindo
+                cavalgadas, desfiles, apresentações musicais
+                e manifestações tradicionais da cultura rural.
+            </p>
+
+            <p>
+                Outro destaque é a tradição da concertina,
+                instrumento semelhante ao acordeão, presente
+                em festas comunitárias e encontros de músicos
+                da região.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Muniz Freire.jpg"
+             alt="Cultura de Muniz Freire"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Muniz Freire.jpg"
+             alt="Estruturas de Muniz Freire"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estão o Parque Ecológico
+                Municipal Geraldo Monteiro, os casarões
+                coloniais preservados no centro urbano e
+                diversos espaços ligados ao turismo rural
+                e ecológico.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Cachoeira do
+            Engenho, o Parque Ecológico Municipal Geraldo
+            Monteiro, o Pico do Menino e os antigos casarões
+            históricos da área central.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia local é fortemente baseada no agronegócio,
+            especialmente na produção de café arábica de alta
+            qualidade. A pecuária leiteira, o comércio e os
+            serviços também possuem papel importante na geração
+            de empregos e renda.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Muniz Freire é considerada um dos municípios-mãe
+            da região do Caparaó, pois seu território original
+            deu origem a diversas cidades vizinhas, incluindo
+            Ibatiba.
+        </p>
+
+        <p>
+            A tradição da concertina continua viva entre os
+            moradores, preservando músicas e costumes herdados
+            dos colonizadores e imigrantes europeus que ajudaram
+            a formar a identidade cultural do município.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

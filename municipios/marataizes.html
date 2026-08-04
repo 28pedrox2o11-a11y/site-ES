@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marataízes - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Marataízes.jpg"
+             alt="Paisagem de Marataízes"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Marataízes</h1>
+            <p>A Pérola do Sul Capixaba</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Marataízes está localizada no litoral sul do Espírito Santo,
+            a aproximadamente 127 km de Vitória. O município faz divisa
+            com Itapemirim e Presidente Kennedy, além de ser banhado
+            pelo Oceano Atlântico.
+        </p>
+
+        <p>
+            Embora sua ocupação tenha começado no início do século XVIII,
+            ligada às plantações de cana-de-açúcar, Marataízes permaneceu
+            por muitos anos vinculada a Itapemirim. Sua emancipação política
+            ocorreu em 16 de janeiro de 1992.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Marataízes possui origem tupi-guarani e significa
+            "água que corre para o mar".
+        </p>
+
+        <p>
+            A denominação faz referência à grande quantidade de lagoas
+            existentes na região, cujas águas encontram caminho até o
+            Oceano Atlântico através da faixa litorânea.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Marataízes.jpg"
+             alt="História de Marataízes"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Marataízes está ligada ao ciclo da cana-de-açúcar,
+                à navegação costeira e ao desenvolvimento econômico da Barra do
+                Itapemirim, importante ponto de escoamento da produção agrícola
+                do sul capixaba.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                Marataízes possui forte tradição litorânea, marcada pela pesca,
+                pelas festas religiosas e pelo turismo de verão, que movimenta
+                a cidade durante toda a alta temporada.
+            </p>
+
+            <p>
+                A população preserva importantes manifestações culturais ligadas
+                ao mar e à história da Barra do Itapemirim.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Marataízes.jpg"
+             alt="Cultura de Marataízes"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Marataízes.jpg"
+             alt="Estruturas de Marataízes"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estão o Palácio das Águias, as Ruínas do
+                Trapiche, o Píer da Praia Central e diversas estruturas voltadas
+                ao turismo, lazer e preservação da memória histórica local.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem as Falésias de Marataízes,
+            a Lagoa do Siri, a Praia Central, a Praia da Areia Preta,
+            o Palácio das Águias e as Ruínas do Trapiche.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia de Marataízes é impulsionada pelos royalties do petróleo,
+            pelo turismo litorâneo e pela agricultura. O município destaca-se
+            nacionalmente pela produção de abacaxi da variedade pérola e possui
+            um dos maiores PIBs per capita do Espírito Santo.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Marataízes é conhecida como a "Pérola do Sul Capixaba", apelido
+            que reflete a importância turística e a beleza natural de suas praias.
+        </p>
+
+        <p>
+            A cidade recebe tradicionalmente milhares de turistas vindos de
+            Minas Gerais e do norte do Rio de Janeiro, sendo um dos destinos
+            de verão mais populares do Espírito Santo.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto Belo - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Ponto Belo.webp"
+             alt="Paisagem de Ponto Belo"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Ponto Belo</h1>
+            <p>O Portal do Extremo Norte Capixaba</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Ponto Belo está localizado na região do extremo norte do
+            Espírito Santo, a aproximadamente 358 km de Vitória.
+            O município faz divisa com Mucurici, Montanha e Pinheiros,
+            além de estar próximo das fronteiras com Minas Gerais e Bahia.
+        </p>
+
+        <p>
+            O povoamento teve início durante a década de 1950 com a
+            chegada de famílias pioneiras ao interior da região.
+            Sua emancipação política foi oficializada em
+            30 de março de 1994, sendo instalada definitivamente
+            em 1º de janeiro de 1997.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Ponto Belo surgiu de um antigo ponto de parada
+            comercial utilizado por tropeiros, caminhoneiros e
+            viajantes durante o período de exploração madeireira.
+        </p>
+
+        <p>
+            A hospitalidade dos moradores e a beleza da paisagem
+            fizeram com que o local passasse a ser conhecido
+            simplesmente como "Ponto Belo", denominação que acabou
+            tornando-se o nome oficial do município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Ponto Belo.jpg"
+             alt="História de Ponto Belo"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Ponto Belo está ligada ao avanço da
+                ocupação do extremo norte capixaba e às atividades
+                de extração de madeira que impulsionaram o surgimento
+                das primeiras comunidades locais.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A cultura local foi fortemente influenciada pelos
+                migrantes vindos da Bahia e de Minas Gerais, que
+                trouxeram tradições, culinária típica e costumes
+                que permanecem presentes até hoje.
+            </p>
+
+            <p>
+                O Festival da Morena é o principal evento cultural
+                do município, reunindo música, gastronomia sertaneja,
+                apresentações culturais e milhares de visitantes
+                durante as festividades juninas.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Ponto Belo.jpg"
+             alt="Cultura de Ponto Belo"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Ponto Belo.jpg"
+             alt="Estruturas de Ponto Belo"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estão o Balneário Dourado,
+                a Igreja Matriz São João Evangelista e as
+                comunidades rurais do distrito de Itamira,
+                importantes referências para o turismo local.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem o Balneário Dourado,
+            a Paróquia São João Evangelista, o distrito de Itamira
+            e as belas paisagens formadas pelos inselbergs que
+            caracterizam a região norte do Espírito Santo.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia local é baseada principalmente na agricultura
+            familiar, com destaque para a produção de café conilon,
+            pecuária de corte e leite, além do comércio varejista
+            voltado ao atendimento da população local.
+        </p>
+
+        <p>
+            O setor público também possui grande relevância na
+            geração de empregos e movimentação econômica do município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            A gastronomia local é famosa pela produção artesanal
+            de carne de sol, considerada uma das especialidades
+            culinárias mais tradicionais do extremo norte capixaba.
+        </p>
+
+        <p>
+            A identidade cultural de Ponto Belo reflete a mistura
+            entre influências capixabas, mineiras e baianas,
+            resultado das correntes migratórias que ajudaram a
+            formar a população do município.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

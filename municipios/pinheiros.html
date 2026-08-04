@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinheiros - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Pinheiros.jpg"
+             alt="Paisagem de Pinheiros"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Pinheiros</h1>
+            <p>Portal da Doce Terra Morena</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Pinheiros está localizado no extremo norte do Espírito Santo,
+            a aproximadamente 330 km de Vitória. O município faz divisa
+            com São Mateus, Conceição da Barra, Pedro Canário, Boa Esperança,
+            Mucurici e o estado de Minas Gerais.
+        </p>
+
+        <p>
+            O processo de ocupação teve início por volta de 1940, durante
+            o avanço das atividades madeireiras na região. Após funcionar
+            como distrito de Conceição da Barra, conquistou sua emancipação
+            política em 30 de dezembro de 1963.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Pinheiros homenageia José Pinheiro Gama, considerado
+            um dos pioneiros do desenvolvimento local.
+        </p>
+
+        <p>
+            Ao instalar um armazém para atender trabalhadores e viajantes,
+            o local passou a ser conhecido como "Parada do Pinheiro",
+            denominação que posteriormente deu origem ao nome oficial
+            do município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Pinheiros.jpg"
+             alt="História de Pinheiros"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Pinheiros está ligada ao desbravamento do
+                extremo norte capixaba, à exploração madeireira e ao
+                desenvolvimento da agricultura, atividades que impulsionaram
+                o crescimento da região durante o século XX.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                Pinheiros preserva importantes manifestações culturais
+                ligadas à tradição rural, destacando-se a Folia de Reis,
+                uma das mais tradicionais expressões religiosas e folclóricas
+                do município.
+            </p>
+
+            <p>
+                A Festa da Cidade e do Café Conilon é o principal evento
+                cultural local, reunindo exposições agrícolas, rodeios,
+                apresentações musicais e atividades voltadas ao agronegócio.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Pinheiros.jpg"
+             alt="Cultura de Pinheiros"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Pinheiros.jpg"
+             alt="Estruturas de Pinheiros"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os principais destaques estão o Mercado Municipal,
+                a Barragem de Pinheiros e os casarões históricos do distrito
+                de São José dos Sobrados, importantes patrimônios locais.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Reserva Biológica
+            Córrego do Veado, a Barragem de Pinheiros, o distrito
+            de São José dos Sobrados e o Mercado Municipal.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia é fortemente baseada no agronegócio.
+            Pinheiros destaca-se como um dos maiores produtores
+            e exportadores de mamão do Espírito Santo, além da
+            produção de pimenta-do-reino e café conilon.
+        </p>
+
+        <p>
+            Também possuem importância econômica a indústria de
+            transformação, o comércio varejista e o setor de serviços.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Pinheiros é conhecida como o Portal da Doce Terra Morena,
+            devido à sua localização estratégica e à forte miscigenação
+            cultural de sua população.
+        </p>
+
+        <p>
+            O município abriga a maior barragem de acumulação de água
+            do Espírito Santo, capaz de armazenar bilhões de litros,
+            contribuindo para o abastecimento e para o desenvolvimento
+            regional.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

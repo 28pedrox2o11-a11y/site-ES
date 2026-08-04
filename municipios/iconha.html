@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconha - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Iconha.jpeg"
+             alt="Paisagem de Iconha"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Iconha</h1>
+            <p>A Capital dos Caminhoneiros</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Iconha situa-se na região sul do Espírito Santo, a cerca de 90 km
+            de Vitória. O município é cortado pela BR-101 e faz divisa com
+            Anchieta, Piúma, Itapemirim, Rio Novo do Sul e Alfredo Chaves.
+        </p>
+
+        <p>
+            O povoamento começou a ganhar força por volta de 1881 com a chegada
+            de imigrantes italianos. O território foi desmembrado de Benevente
+            (atual Anchieta) e conquistou sua emancipação política em
+            3 de julho de 1924.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Iconha tem origem indígena derivada do tupi-guarani.
+            Seu significado mais aceito é "pedra sobre pedra",
+            "altar de pedra" ou "morro que parece um altar".
+        </p>
+
+        <p>
+            A denominação foi inspirada nas características do relevo local,
+            marcado por montanhas de granito e formações rochosas de destaque.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Iconha.jpg"
+             alt="História de Iconha"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A formação de Iconha está ligada à imigração italiana e ao
+                desenvolvimento das comunidades rurais do sul capixaba.
+                Ao longo das décadas, a cidade cresceu em torno da BR-101,
+                tornando-se uma importante referência regional.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A principal manifestação cultural do município é a Festa dos
+                Caminhoneiros, realizada anualmente e conhecida pela tradicional
+                Carreata de São Cristóvão, padroeiro dos motoristas.
+            </p>
+
+            <p>
+                A herança italiana permanece viva na culinária típica,
+                nos embutidos artesanais, nas massas caseiras, nos pães e
+                nos doces produzidos pelas famílias do interior.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Iconha.webp"
+             alt="Cultura de Iconha"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Iconha.jpg"
+             alt="Estruturas de Iconha"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                A cidade possui infraestrutura fortemente ligada ao transporte
+                rodoviário, destacando-se por oficinas especializadas,
+                centros de apoio a caminhoneiros e estabelecimentos
+                comerciais voltados ao setor logístico.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Entre os principais atrativos estão a Cachoeira do Salto,
+            a Cachoeira de Tokaia, o Sítio Histórico de Duas Barras
+            e o Mirante do Cruzeiro.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia de Iconha é impulsionada pelo transporte rodoviário,
+            pela logística, pelo comércio, pelas oficinas mecânicas e pela
+            agricultura, com destaque para a produção de banana e café conilon.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Em janeiro de 2020, Iconha enfrentou uma das maiores enchentes
+            da história do Espírito Santo. A rápida reconstrução da cidade
+            tornou-se símbolo de união, resiliência e superação para toda
+            a população capixaba.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>

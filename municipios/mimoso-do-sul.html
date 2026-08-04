@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimoso do Sul - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Mimoso do Sul.jpg"
+             alt="Paisagem de Mimoso do Sul"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Mimoso do Sul</h1>
+            <p>Terra da Sanfona, Viola e Tradição Capixaba</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Mimoso do Sul está localizado no extremo sul do Espírito Santo,
+            a aproximadamente 173 km de Vitória. O município faz divisa com
+            Muqui, Apiacá e São José do Calçado, além de fazer fronteira
+            com o estado do Rio de Janeiro.
+        </p>
+
+        <p>
+            A formação do núcleo urbano começou em 1852 com a aquisição das
+            terras da Fazenda do Vale Mimoso pelo capitão Pedro Ferreira da Silva.
+            Sua emancipação política foi oficializada em 29 de julho de 1887.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Mimoso do Sul está ligado à antiga Fazenda do Vale Mimoso,
+            que deu origem ao povoamento da região.
+        </p>
+
+        <p>
+            Existem diversas versões populares sobre a origem do termo "Mimoso",
+            envolvendo uma vaca chamada Mimosa, a abundância do jacarandá-mimoso
+            e até mesmo a estrela Mimosa, utilizada como referência por tropeiros.
+            O complemento "do Sul" foi adicionado para diferenciar a cidade de
+            outras localidades brasileiras.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Mimoso do Sul.jpg"
+             alt="História de Mimoso do Sul"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Mimoso do Sul está ligada ao ciclo do café,
+                à ocupação do sul capixaba e ao desenvolvimento de antigas
+                comunidades rurais que contribuíram para o crescimento econômico
+                e cultural da região.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                O principal destaque cultural do município é o tradicional
+                Festival de Inverno de Sanfona e Viola, realizado no distrito
+                histórico de São Pedro do Itabapoana.
+            </p>
+
+            <p>
+                O evento reúne músicos, turistas e amantes da cultura popular,
+                tornando-se uma das manifestações culturais mais importantes
+                do Espírito Santo.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Mimoso do Sul.webp"
+             alt="Cultura de Mimoso do Sul"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Mimoso do Sul.jpg"
+             alt="Estruturas de Mimoso do Sul"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os principais patrimônios destacam-se o Sítio Histórico
+                de São Pedro do Itabapoana, o Monumento ao Cristo Redentor
+                e diversas construções históricas preservadas desde o século XIX.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem o Sítio Histórico de São Pedro
+            do Itabapoana, o Cristo Redentor de Mimoso do Sul, as cachoeiras
+            do Rio Muqui do Sul e diversas paisagens serranas espalhadas pelo município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia local é baseada na pecuária leiteira e de corte,
+            na cafeicultura, na fruticultura e na extração de rochas ornamentais,
+            especialmente mármore e granito.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Ao longo de sua história, o município recebeu diversos nomes,
+            incluindo Ponte de Itabapoana, Monjardim, São Pedro e João Pessoa,
+            antes de retomar definitivamente a denominação Mimoso do Sul.
+        </p>
+
+        <p>
+            Em 2024, a cidade enfrentou uma das maiores enchentes da história
+            do Espírito Santo. A rápida recuperação da população tornou-se um
+            símbolo de união, resistência e superação para toda a região.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marechal Floriano - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Marechal Floriano.jpg"
+             alt="Paisagem de Marechal Floriano"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Marechal Floriano</h1>
+            <p>A Cidade das Orquídeas</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Marechal Floriano está localizada na região serrana do Espírito Santo,
+            a aproximadamente 45 km de Vitória. O município é cortado pela BR-262
+            e faz divisa com Domingos Martins, Alfredo Chaves, Viana e Guarapari.
+        </p>
+
+        <p>
+            O povoamento começou a se consolidar a partir de 1862 com a chegada
+            de imigrantes europeus. Durante muitos anos pertenceu a Domingos Martins,
+            conquistando sua emancipação política em 31 de outubro de 1991.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O município recebeu seu nome em homenagem ao Marechal Floriano Peixoto,
+            segundo presidente da República do Brasil e uma das figuras políticas
+            mais importantes do período republicano.
+        </p>
+
+        <p>
+            Antes da atual denominação, a localidade era conhecida como
+            Quilômetro 47 e posteriormente como Vila de Braço do Rio Jucu.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Marechal Floriano.jpg"
+             alt="História de Marechal Floriano"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                O crescimento de Marechal Floriano está diretamente ligado à
+                chegada da ferrovia e à imigração europeia. Os trilhos facilitaram
+                o transporte do café e impulsionaram o desenvolvimento comercial
+                da região serrana.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A cultura local é fortemente influenciada pelas tradições italianas
+                e alemãs. O principal evento cultural do município é a Italemanha,
+                festival que celebra a gastronomia, a música e as danças típicas
+                dessas comunidades.
+            </p>
+
+            <p>
+                A herança dos imigrantes permanece viva na arquitetura,
+                culinária e costumes preservados pelas famílias locais.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Marechal Floriano.jpg"
+             alt="Cultura de Marechal Floriano"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Marechal Floriano.jpg"
+             alt="Estruturas de Marechal Floriano"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estão a antiga Estação Ferroviária,
+                atualmente Museu da Imigração, o Zoo Park da Montanha,
+                o Orquidário Florália e diversas estruturas voltadas ao
+                agroturismo e lazer rural.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem o Museu da Imigração,
+            o Zoo Park da Montanha, o Orquidário Florália,
+            a Cachoeira do Aloísio e diversas propriedades de agroturismo.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia é baseada na avicultura, produção de ovos,
+            café arábica, banana, hortaliças e no agroturismo.
+            O comércio às margens da BR-262 e o setor gastronômico
+            também possuem grande importância econômica.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Marechal Floriano é conhecida como a "Cidade das Orquídeas",
+            devido à enorme variedade dessas flores encontrada naturalmente
+            em suas matas e montanhas.
+        </p>
+
+        <p>
+            A antiga ferrovia foi responsável por transformar completamente
+            a história da cidade, influenciando o crescimento urbano,
+            o comércio e a chegada de novos moradores à região.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

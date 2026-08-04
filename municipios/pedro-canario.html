@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Canário - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Pedro Canário.webp"
+             alt="Paisagem de Pedro Canário"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Pedro Canário</h1>
+            <p>A Doce Terra Morena</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Pedro Canário está localizado no extremo norte do Espírito Santo,
+            a aproximadamente 267 km de Vitória. O município é cortado pela
+            BR-101 e faz divisa com Conceição da Barra, São Mateus, Pinheiros
+            e com o estado da Bahia.
+        </p>
+
+        <p>
+            O povoamento intensificou-se na década de 1940 com a exploração
+            de madeira de lei. Após muitos anos como distrito de Conceição
+            da Barra, conquistou sua emancipação política em
+            23 de dezembro de 1983.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome do município homenageia Pedro Canário Ribeiro,
+            comerciante baiano que chegou à região em 1948 e se tornou
+            uma figura muito conhecida entre moradores e viajantes.
+        </p>
+
+        <p>
+            Seu comércio e pensão transformaram-se em um importante ponto
+            de parada para caminhoneiros, fazendo com que a localidade
+            passasse a ser conhecida como "Parada do Pedro Canário".
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Pedro Canário.jpg"
+             alt="História de Pedro Canário"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Pedro Canário está ligada à ocupação do extremo
+                norte capixaba, ao crescimento das atividades madeireiras
+                e à chegada de migrantes vindos principalmente da Bahia
+                e de Minas Gerais.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A cultura local é marcada pela influência baiana e mineira,
+                refletida na culinária, na música e nas festas populares
+                realizadas ao longo do ano.
+            </p>
+
+            <p>
+                A Festa de Emancipação é um dos eventos mais importantes do
+                município, reunindo rodeios, exposições agropecuárias,
+                feiras de negócios e grandes apresentações de forró.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Pedro Canário.jpg"
+             alt="Cultura de Pedro Canário"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Pedro Canário.jpg"
+             alt="Estruturas de Pedro Canário"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os principais destaques estão a Lagoa Augusto Ruschi,
+                com ampla infraestrutura de lazer, além de espaços esportivos,
+                áreas de convivência e estruturas voltadas para eventos
+                comunitários.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Lagoa Augusto Ruschi,
+            a Cachoeira dos Pretos e as paisagens do Vale do Rio Itaúnas,
+            bastante procuradas para lazer e ecoturismo.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia municipal possui forte base agropecuária, destacando-se
+            a produção de mamão, cana-de-açúcar, mandioca, eucalipto e a
+            pecuária bovina.
+        </p>
+
+        <p>
+            Também possuem grande importância as indústrias ligadas ao
+            processamento de madeira e o setor de comércio e serviços.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Pedro Canário é conhecida pelo apelido de "Doce Terra Morena",
+            uma referência à tradição da produção de cana-de-açúcar e à
+            diversidade cultural de sua população.
+        </p>
+
+        <p>
+            O próprio Pedro Canário Ribeiro contribuiu diretamente para o
+            crescimento da cidade ao doar terrenos para a construção da
+            Igreja Matriz e para a organização das primeiras ruas urbanas.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linhares - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Linhares.jpg"
+             alt="Paisagem de Linhares"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Linhares</h1>
+            <p>A Cidade das Águas</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Linhares está localizada na região norte do Espírito Santo,
+            a aproximadamente 135 km de Vitória. É o maior município em
+            extensão territorial do estado e possui grande importância
+            econômica e ambiental para a região.
+        </p>
+
+        <p>
+            Sua origem remonta ao ano de 1800, com a instalação de um
+            quartel militar às margens do Rio Doce. A localidade foi elevada
+            à categoria de vila em 1833 e teve sua emancipação política
+            restabelecida em 31 de dezembro de 1943.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Linhares é uma homenagem ao Conde de Linhares,
+            Dom Rodrigo de Souza Coutinho, importante ministro da Coroa
+            Portuguesa durante o período de colonização da região.
+        </p>
+
+        <p>
+            Antes da adoção do nome atual, a primeira fortificação local
+            era conhecida como Coutins.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Linhares.jpg"
+             alt="História de Linhares"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Linhares está profundamente ligada ao Rio Doce,
+                à ocupação do norte capixaba e ao desenvolvimento econômico
+                promovido pela agricultura, pela indústria e pelas atividades
+                ligadas ao litoral e às lagoas da região.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A principal manifestação cultural do município é a Festa do
+                Caboclo Bernardo, realizada anualmente em Regência Augusta.
+                O evento reúne bandas de congo e celebra a memória do herói
+                que salvou dezenas de marinheiros em um naufrágio histórico.
+            </p>
+
+            <p>
+                Linhares também preserva tradições ligadas à pesca,
+                à cultura do Rio Doce e às comunidades litorâneas.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Linhares.jpeg"
+             alt="Cultura de Linhares"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Linhares.jpg"
+             alt="Estruturas de Linhares"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                O município possui importante infraestrutura urbana, industrial
+                e turística, além de áreas voltadas à preservação ambiental,
+                pesquisa científica e proteção da vida marinha.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Entre os principais atrativos estão a Lagoa Juparanã,
+            a Vila de Regência Augusta, a Praia de Povoação,
+            a Praia de Barra Seca e a Lagoa das Palmas.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            Linhares possui a maior economia do interior capixaba.
+            Destacam-se a indústria de transformação, a produção de móveis,
+            a agricultura voltada ao café conilon, cacau e mamão, além da
+            exploração de petróleo e gás natural.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Linhares concentra cerca de 84% de toda a água doce superficial
+            do Espírito Santo, possuindo dezenas de lagoas distribuídas por
+            seu território.
+        </p>
+
+        <p>
+            O maior herói da cidade é Caboclo Bernardo, pescador que entrou
+            para a história nacional ao salvar 128 marinheiros de um navio
+            naufragado na foz do Rio Doce em 1887.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

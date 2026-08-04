@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São José do Calçado - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/São José do Calçado.jpg"
+             alt="Paisagem de São José do Calçado"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>São José do Calçado</h1>
+            <p>A Cidade do Santo Calçado</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            São José do Calçado está localizada na região sul do
+            Espírito Santo, a aproximadamente 210 km de Vitória.
+            O município integra a bacia do Rio Itabapoana e faz
+            divisa com Guaçuí, Alegre, Mimoso do Sul, Apiacá,
+            Bom Jesus do Norte e o estado do Rio de Janeiro.
+        </p>
+
+        <p>
+            O povoamento teve início por volta de 1820 com a chegada
+            de pioneiros mineiros e fluminenses atraídos pelas terras
+            férteis da região. Sua emancipação política ocorreu em
+            11 de novembro de 1890.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome do município está ligado à imagem histórica
+            de São José encomendada para a primeira capela local.
+        </p>
+
+        <p>
+            Diferentemente das representações tradicionais, a imagem
+            foi esculpida usando botas ou calçados fechados de couro.
+            Esse detalhe chamou a atenção dos moradores, originando
+            o nome São José do Calçado.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/São José do Calçado.jpg"
+             alt="História de São José do Calçado"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                O município teve grande importância econômica durante
+                o ciclo do café no sul capixaba. Sua influência foi tão
+                significativa que serviu como território de origem para
+                cidades vizinhas que posteriormente conquistaram sua
+                emancipação.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A cultura local é marcada pelas tradições rurais,
+                religiosidade e forte influência das famílias que
+                participaram da ocupação histórica da região do
+                Vale do Itabapoana.
+            </p>
+
+            <p>
+                A Festa de Emancipação e do Calçadense Ausente é o
+                principal evento cultural do município, reunindo
+                shows, cavalgadas, rodeios e homenagens aos filhos
+                da terra que vivem em outras cidades.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/São José do Calçado.jpg"
+             alt="Cultura de São José do Calçado"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/São José do Calçado.webp"
+             alt="Estruturas de São José do Calçado"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estão a Igreja Matriz de São José,
+                o Centro Histórico com seus casarões preservados e
+                o Horto Florestal Municipal, importante área verde
+                para lazer e preservação ambiental.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Cachoeira do Mangaravite,
+            a Igreja Matriz de São José, o Centro Histórico,
+            o Horto Florestal Municipal e a famosa Pedra do Gavião.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia é baseada principalmente na agropecuária,
+            destacando-se a produção de leite, a bovinocultura
+            e as lavouras de café arábica e conilon.
+        </p>
+
+        <p>
+            O comércio local, os serviços e a administração pública
+            também possuem papel importante na geração de empregos
+            e movimentação econômica do município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            No final do século XIX, São José do Calçado chegou a ser
+            considerado o município mais importante da região do
+            Vale do Itabapoana, exercendo influência sobre diversas
+            localidades vizinhas.
+        </p>
+
+        <p>
+            A lenda da Pedra do Gavião permanece viva no imaginário
+            popular, contando histórias sobre enormes aves que
+            habitavam as montanhas da Mata Atlântica durante os
+            primeiros tempos da colonização.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

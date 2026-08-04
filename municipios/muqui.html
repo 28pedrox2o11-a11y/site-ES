@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muqui - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Muqui.jpg"
+             alt="Paisagem de Muqui"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Muqui</h1>
+            <p>A Cidade dos Casarões e da Folia de Reis</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Muqui está localizado na região sul do Espírito Santo,
+            a aproximadamente 164 km de Vitória. O município faz
+            divisa com Mimoso do Sul, Atílio Vivácqua, Jerônimo
+            Monteiro e Cachoeiro de Itapemirim.
+        </p>
+
+        <p>
+            O povoamento começou por volta de 1850 com a chegada
+            de imigrantes vindos do Vale do Rio Paraíba em busca
+            de terras férteis para o cultivo do café. Sua
+            emancipação política ocorreu em 22 de outubro de 1912.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Muqui possui origem tupi-guarani e significa
+            "entre morros" ou "entre moitas", referência às
+            diversas colinas e montanhas que cercam a cidade.
+        </p>
+
+        <p>
+            Antes da adoção do nome atual, a localidade era
+            conhecida como Arraial dos Lagartos, apelido dado
+            pelos primeiros moradores da região.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Muqui.jpg"
+             alt="História de Muqui"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                Muqui viveu seu período de maior prosperidade
+                durante a era do café. A riqueza produzida pelas
+                fazendas permitiu a construção de casarões,
+                igrejas, estações ferroviárias e edifícios que
+                hoje formam o maior conjunto histórico tombado
+                do Espírito Santo.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                Muqui é reconhecida nacionalmente pelo Encontro
+                Nacional de Folias de Reis, considerado um dos
+                mais importantes eventos folclóricos do Brasil.
+            </p>
+
+            <p>
+                Também se destacam o tradicional Carnaval do
+                Boi Pintadinho e o Festival de TV e Cinema do
+                Interior (FECIM), que utilizam os casarões
+                históricos como cenário cultural.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Muqui.jpg"
+             alt="Cultura de Muqui"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Muqui.png"
+             alt="Estruturas de Muqui"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os principais patrimônios estão o Sítio
+                Histórico de Muqui, a Estação Ferroviária,
+                a Igreja Matriz de São João Batista e diversos
+                casarões preservados da época dos barões do café.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem o Sítio Histórico
+            de Muqui, a Estação Ferroviária, a Igreja Matriz
+            de São João Batista e o Monumento Natural da
+            Pedra do Dragão.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia municipal é baseada principalmente no
+            agronegócio familiar, destacando-se a produção de
+            café conilon e cafés especiais premiados. A produção
+            artesanal de doces também possui forte relevância
+            econômica e cultural.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Muqui abriga o maior conjunto histórico tombado
+            do Espírito Santo, com mais de 180 imóveis
+            preservados das primeiras décadas do século XX.
+        </p>
+
+        <p>
+            O município foi pioneiro no turismo "cama e café"
+            no estado, permitindo que visitantes se hospedem
+            em casarões históricos enquanto conhecem a cultura
+            local diretamente com as famílias moradoras.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itapemirim - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Itapemirim.jpg"
+             alt="Praia de Itapemirim"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Itapemirim</h1>
+            <p>O Município-Mãe do Sul Capixaba</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Itapemirim está localizada no litoral sul do Espírito Santo,
+            a aproximadamente 120 km de Vitória. O município faz divisa com
+            Marataízes, Piúma, Rio Novo do Sul, Cachoeiro de Itapemirim
+            e Presidente Kennedy.
+        </p>
+
+        <p>
+            Suas origens remontam a 1710, durante o período de ocupação colonial
+            e instalação das primeiras fazendas de cana-de-açúcar. A emancipação
+            política ocorreu oficialmente em 27 de junho de 1815, tornando
+            Itapemirim um dos municípios mais antigos do Espírito Santo.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Itapemirim tem origem na língua tupi antiga. A palavra deriva
+            da união dos termos "itá" (pedra), "peb" (achatada) e "mirĩ"
+            (pequena), formando o significado de "pequena pedra achatada"
+            ou "caminho da pedra pequena".
+        </p>
+
+        <p>
+            O nome faz referência ao leito rochoso do Rio Itapemirim,
+            um dos principais cursos d'água da região.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Itapemirim.jpg"
+             alt="História de Itapemirim"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                Itapemirim possui uma das histórias mais antigas do Espírito Santo.
+                Durante o período colonial e imperial, seu território abrangia
+                grande parte do sul capixaba, influenciando diretamente a formação
+                de diversos municípios que surgiram posteriormente.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A principal manifestação cultural do município é a Festa de São Pedro
+                dos Pescadores, realizada anualmente em Itaipava. O evento reúne
+                tradição religiosa, procissões marítimas e homenagens aos
+                trabalhadores da pesca.
+            </p>
+
+            <p>
+                A cultura local também está fortemente ligada ao mar, à pesca
+                artesanal e às tradições das comunidades litorâneas.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Itapemirim.jpg"
+             alt="Cultura de Itapemirim"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Itapemirim.jpg"
+             alt="Estruturas de Itapemirim"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                O município possui importantes estruturas ligadas à pesca,
+                ao turismo litorâneo e à economia regional, além de conservar
+                áreas históricas relacionadas ao antigo porto e ao desenvolvimento
+                comercial do sul capixaba.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Entre os principais atrativos estão as Praias de Itaoca e Itaipava,
+            a Ilha dos Franceses, o Monte Aghá e a formação rochosa
+            Frade e a Freira, um dos cenários mais conhecidos do sul capixaba.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia de Itapemirim é impulsionada pelos royalties do petróleo,
+            pela pesca artesanal e industrial, pelo turismo litorâneo e pela
+            agroindústria. O município possui um dos maiores polos pesqueiros
+            do Espírito Santo, com destaque para a pesca de atum e meca.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Itapemirim é conhecida como o "Município-Mãe do Sul Capixaba",
+            pois seu território original deu origem a diversas cidades da região,
+            incluindo Cachoeiro de Itapemirim e Marataízes.
+        </p>
+
+        <p>
+            A antiga Barra de Itapemirim preserva memórias do período em que
+            funcionava como importante ponto de embarque para o transporte
+            de café e açúcar produzidos no interior do estado.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

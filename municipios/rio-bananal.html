@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Bananal - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Rio Bananal.jpg"
+             alt="Paisagem de Rio Bananal"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Rio Bananal</h1>
+            <p>A Terra do Café Conilon e das Águas</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Rio Bananal está localizado na região norte do Espírito Santo,
+            na Microrregião do Rio Doce, a aproximadamente 176 km de Vitória.
+            O município faz divisa com Linhares, Governador Lindenberg,
+            Sooretama e Vila Valério.
+        </p>
+
+        <p>
+            Os primeiros colonizadores chegaram por volta de 1929,
+            vindos principalmente de Marilândia, fundando os núcleos
+            de Santo Antônio do Bananal e São Sebastião do Bananal.
+            A emancipação política ocorreu em 14 de setembro de 1979.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Rio Bananal surgiu a partir do rio encontrado
+            pelos primeiros colonizadores ao adentrarem a mata.
+        </p>
+
+        <p>
+            O curso d'água recebeu esse nome devido à presença
+            de bananeiras em suas margens. Posteriormente, o nome
+            foi adotado pelo distrito e pelo município.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Rio Bananal.jpg"
+             alt="História de Rio Bananal"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A ocupação da região ocorreu durante o processo de
+                expansão agrícola do norte capixaba. Os pioneiros
+                enfrentaram densas florestas até estabelecerem as
+                primeiras comunidades que deram origem à cidade.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A cultura ribanense é marcada por tradições religiosas,
+                bandas marciais, folia de reis e grandes encenações
+                da Paixão de Cristo, que mobilizam centenas de
+                participantes todos os anos.
+            </p>
+
+            <p>
+                Destaca-se também a Banda Marcial Municipal
+                Edgar Ronchette Maurício, fundada em 1984 e considerada
+                um dos símbolos culturais da cidade.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Rio Bananal.png"
+             alt="Cultura de Rio Bananal"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Rio Bananal.jpg"
+             alt="Estruturas de Rio Bananal"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estão o Seminário Católico da
+                Paróquia Nossa Senhora do Rosário de Fátima,
+                a Pedra do Cruzeiro e os espaços voltados ao
+                turismo religioso e ecológico.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Lagoa Jesuína,
+            a Lagoa Juparanã, a Ilha do Imperador,
+            a Pedra do Cruzeiro e o Seminário Católico.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            Rio Bananal é um dos maiores produtores de café conilon
+            do Espírito Santo, destacando-se também na produção de
+            coco, maracujá, mamão, pimenta-do-reino, milho, feijão,
+            mandioca e banana.
+        </p>
+
+        <p>
+            O município possui ainda atividades ligadas à pecuária,
+            fabricação de cachaça, móveis, farinha de mandioca,
+            esquadrias de madeira e sorvetes.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            A Lagoa Juparanã, que banha parte do município,
+            é considerada a maior lagoa do Brasil em volume
+            de água e foi visitada pelo imperador Dom Pedro II
+            em 1860.
+        </p>
+
+        <p>
+            O Concurso de Qualidade do Café Conilon de Rio Bananal
+            tornou-se uma importante vitrine para os produtores locais,
+            fortalecendo a principal atividade econômica do município.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Teresa - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Santa Teresa.jpg"
+             alt="Paisagem de Santa Teresa"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Santa Teresa</h1>
+            <p>O Berço da Imigração Italiana no Brasil</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Santa Teresa está localizada na região central serrana
+            do Espírito Santo, a aproximadamente 78 km de Vitória.
+            O município possui altitude média de 655 metros e faz
+            divisa com Fundão, Santa Leopoldina, Santa Maria de Jetibá,
+            São Roque do Canaã e Itarana.
+        </p>
+
+        <p>
+            Sua colonização começou oficialmente em 26 de junho de 1874,
+            com a chegada do navio Sofia trazendo os primeiros grupos
+            organizados de imigrantes italianos. A emancipação política
+            ocorreu em 22 de fevereiro de 1891.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome do município foi escolhido em homenagem a
+            Santa Teresa de Jesus, também conhecida como
+            Santa Teresa d’Ávila, importante religiosa espanhola
+            do século XVI.
+        </p>
+
+        <p>
+            Os colonizadores italianos adotaram essa denominação
+            como demonstração de fé e devoção religiosa, tornando-a
+            um dos símbolos da identidade histórica local.
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Santa Teresa.jpg"
+             alt="História de Santa Teresa"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                Santa Teresa é reconhecida oficialmente como o
+                berço da imigração italiana no Brasil. A cidade
+                desempenhou papel fundamental na formação cultural,
+                econômica e social do Espírito Santo.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A influência italiana permanece viva na culinária,
+                arquitetura, música, festas típicas e costumes
+                preservados pelas famílias descendentes dos pioneiros.
+            </p>
+
+            <p>
+                A Festa do Imigrante Italiano é o principal evento
+                cultural do município, reunindo desfiles, grupos
+                folclóricos, apresentações musicais e gastronomia
+                típica que atraem milhares de visitantes.
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Santa Teresa.png"
+             alt="Cultura de Santa Teresa"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Santa Teresa.jpg"
+             alt="Estruturas de Santa Teresa"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques estão o Museu de Biologia
+                Mello Leitão, a Rua do Lazer, o Circuito Caravaggio
+                e diversos casarões históricos preservados no
+                centro urbano.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem o Museu de Biologia
+            Mello Leitão, o Vale do Tabocas, o Circuito Caravaggio,
+            a Cachoeira do Country Club e a tradicional Rua do Lazer.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia municipal é impulsionada pelo turismo de
+            montanha, hotelaria, gastronomia e produção de vinhos
+            artesanais. Santa Teresa é considerada uma das principais
+            referências do enoturismo capixaba.
+        </p>
+
+        <p>
+            Também se destacam a produção de café arábica de altitude,
+            morango, kiwi, uva e diversas atividades ligadas à
+            agricultura familiar.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Santa Teresa possui oficialmente o título de primeira
+            cidade colonizada por italianos no Brasil, reconhecimento
+            concedido por lei federal em 2018.
+        </p>
+
+        <p>
+            O município também é conhecido como a Terra dos
+            Beija-Flores, graças ao trabalho do naturalista
+            Augusto Ruschi, que dedicou sua vida ao estudo e
+            preservação dessas aves.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

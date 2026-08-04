@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenópolis - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+    <h1>Nossa História Capixaba</h1>
+</header>
+
+<main class="pagina-municipio">
+
+    <a href="../pgs/geografia.html" class="btn-voltar">
+        ← Voltar para o mapa
+    </a>
+
+    <section class="hero-municipio">
+
+        <img src="../fotos/cidades/Mantenópolis.jpg"
+             alt="Paisagem de Mantenópolis"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div class="hero-texto">
+            <h1>Mantenópolis</h1>
+            <p>A Cidade da Paz</p>
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Localização e Fundação</h2>
+
+        <p>
+            Mantenópolis está localizada no extremo noroeste do Espírito Santo,
+            próxima à divisa com Minas Gerais. O município encontra-se a cerca
+            de 250 km de Vitória e faz divisa com Barra de São Francisco,
+            Pancas e Águia Branca.
+        </p>
+
+        <p>
+            O primeiro colono registrado na região foi Alexandrino José Ribeiro,
+            em 1928. Inicialmente distrito de Barra de São Francisco, o município
+            conquistou sua emancipação política em 29 de dezembro de 1953,
+            sendo instalado oficialmente em janeiro de 1954.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Origem do Nome</h2>
+
+        <p>
+            O nome Mantenópolis surgiu da união entre o nome do Córrego
+            Manteninha e o radical Mantena, importante localidade vizinha
+            situada em Minas Gerais.
+        </p>
+
+        <p>
+            O sufixo grego "polis", que significa cidade, foi acrescentado
+            formando o significado de "Cidade próxima a Mantena".
+            Popularmente, muitos moradores também interpretam o nome como
+            "Cidade da Terra Boa".
+        </p>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/historia/Mantenópolis.jpg"
+             alt="História de Mantenópolis"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>História</h2>
+
+            <p>
+                A história de Mantenópolis está ligada à ocupação do noroeste
+                capixaba e ao crescimento das comunidades rurais estabelecidas
+                na região. Ao longo do século XX, o município consolidou sua
+                identidade agrícola e sua importância regional.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <div>
+
+            <h2>Cultura</h2>
+
+            <p>
+                A Festa de Emancipação é o principal evento cultural do município,
+                reunindo cavalgadas, exposições agropecuárias, atrações musicais
+                e manifestações típicas da cultura rural capixaba.
+            </p>
+
+            <p>
+                A vida comunitária tranquila e o forte vínculo entre os moradores
+                contribuíram para que a cidade recebesse o apelido de
+                "Cidade da Paz".
+            </p>
+
+        </div>
+
+        <img src="../fotos/cultura/Mantenópolis.jpg"
+             alt="Cultura de Mantenópolis"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+    </section>
+
+    <section class="card-municipio com-imagem">
+
+        <img src="../fotos/estruturas/Mantenópolis.jpg"
+             alt="Estruturas de Mantenópolis"
+             class="imagem-ampliavel"
+             onclick="abrirImagem(this)">
+
+        <div>
+
+            <h2>Estruturas</h2>
+
+            <p>
+                Entre os destaques urbanos estão a Praça Jardim Dom Luís,
+                a Igreja Matriz e diversos espaços voltados ao lazer e ao
+                turismo regional, como clubes e áreas de contemplação natural.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Pontos Turísticos</h2>
+
+        <p>
+            Os principais atrativos incluem a Rampa de Voo Livre de Mantenópolis,
+            a Praça Jardim Dom Luís, o Alfa Clube e os diversos mirantes naturais
+            espalhados pelas serras da região.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Economia</h2>
+
+        <p>
+            A economia local é baseada principalmente na cafeicultura,
+            com produção de café conilon e arábica. O setor público,
+            pequenas indústrias de laticínios e o comércio varejista
+            também possuem papel importante na geração de empregos.
+        </p>
+
+    </section>
+
+    <section class="card-municipio">
+
+        <h2>Curiosidades</h2>
+
+        <p>
+            Mantenópolis é conhecida em todo o Espírito Santo como a
+            "Cidade da Paz", devido ao ambiente tranquilo e ao estilo
+            de vida pacato de seus moradores.
+        </p>
+
+        <p>
+            Um fato histórico curioso ocorreu em 1963, quando os distritos
+            de Ametista e Limeira deixaram de pertencer ao Espírito Santo
+            e passaram oficialmente para o território de Minas Gerais após
+            um acordo de redefinição de fronteiras entre os estados.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-ampliada" alt="Imagem ampliada">
+</div>
+
+<script>
+function abrirImagem(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagem-ampliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>
