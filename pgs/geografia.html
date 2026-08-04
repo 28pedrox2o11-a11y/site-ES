@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geografia - Nossa História Capixaba</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/geo.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="topo">
+    <div class="logo-area">
+        <img src="../imgs/icons/logo_marista.png" alt="Logo Marista" class="logo-marista">
+        <h1>Nossa História Capixaba</h1>
+    </div>
+</header>
+
+    <!-- ESTRUTURA PRINCIPAL -->
+    <div class="container">
+
+        <!-- MENU LATERAL -->
+        <aside class="menu-lateral">
+            <a href="../index.html">Início</a>
+            <a href="informacoes_do_es.html">Informações do ES</a>
+            <a href="historia.html">História</a>
+            <a href="geografia.html" class="ativo">Geografia</a>
+            <a href="estruturas.html">Estruturas</a>
+            <a href="cultura.html">Cultura</a>
+            <a href="Objetivo_do_prjeto.html">Objetivo do Projeto</a>
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo-principal">
+
+            <!-- BANNER PRINCIPAL DA GEOGRAFIA -->
+            <section class="banner-geo">
+                <h1>Geografia do Espírito Santo</h1>
+                <p>
+                    Descubra tudo sobre a geografia do Espírito Santo em um só lugar. Explore informações sobre sua localização, limites territoriais, clima, relevo, hidrografia, fauna, flora, população e outros aspectos fundamentais que revelam a diversidade e a importância do território capixaba.
+                </p>
+            </section>
+
+            <!-- CARDS DOS TÓPICOS GEOGRÁFICOS -->
+            <section class="cards-geo">
+
+                <a href="geo folder/localizacao.html" class="card-geo">
+                    <h3>🗺️ Posição Geográfica</h3>
+                    <p>
+                        Veja onde o Espírito Santo está situado no Brasil, seus limites territoriais, capital, área e comparação com outros estados.
+                    </p>
+                </a>
+
+                <a href="geo folder/populacao.html" class="card-geo">
+                    <h3>👥 População</h3>
+                    <p>
+                        Conheça a população do Espírito Santo, sua densidade demográfica, municípios mais populosos e dados de natalidade e mortalidade.
+                    </p>
+                </a>
+
+                <a href="geo folder/clima.html" class="card-geo">
+                    <h3>🌡️ Clima</h3>
+                    <p>
+                        Entenda os tipos de clima presentes no estado, as regiões mais frias, mais quentes e o clima predominante na capital.
+                    </p>
+                </a>
+
+                <a href="geo folder/relevo.html" class="card-geo">
+                    <h3>⛰️ Relevo</h3>
+                    <p>
+                        Explore o relevo capixaba, suas áreas elevadas, regiões montanhosas, terrenos e perfil topográfico.
+                    </p>
+                </a>
+
+                <a href="geo folder/fauna_e_flora.html" class="card-geo">
+                    <h3>🌳 Fauna e Flora</h3>
+                    <p>
+                        Conheça a rica biodiversidade capixaba, incluindo animais nativos, plantas típicas e espécies ameaçadas de extinção.
+                    </p>
+                </a>
+
+                <a href="geo folder/hidrografia.html" class="card-geo">
+                    <h3>💧 Hidrografia</h3>
+                    <p>
+                        Entenda as bacias hidrográficas, rios e lagoas do estado, além de sua importância econômica e ecológica.
+                    </p>
+                </a>
+
+            </section>
+
+            <!-- MAPA INTERATIVO DAS REGIÕES -->
+            <section class="mapa-card">
+
+                <div class="card-titulo">
+                    <h2>Mapa Interativo dos Municípios</h2>
+                    <span>Espírito Santo</span>
+                </div>
+
+                <p class="mapa-texto">
+                    Clique em uma região para visualizar seus municípios.
+                </p>
+
+                <div class="catalogo-container">
+                    <div class="catalogo-regioes">
+                        <button class="regiao-card noroeste" onclick="mostrarRegiao('noroeste', this)">
+                            <h3>Noroeste</h3>
+                            <span>7 municípios</span>
+                        </button>
+
+                        <button class="regiao-card nordeste" onclick="mostrarRegiao('nordeste', this)">
+                            <h3>Nordeste</h3>
+                            <span>9 municípios</span>
+                        </button>
+
+                        <button class="regiao-card centro-oeste" onclick="mostrarRegiao('centro-oeste', this)">
+                            <h3>Centro-Oeste</h3>
+                            <span>9 municípios</span>
+                        </button>
+
+                        <button class="regiao-card central-serrana" onclick="mostrarRegiao('central-serrana', this)">
+                            <h3>Central Serrana</h3>
+                            <span>6 municípios</span>
+                        </button>
+
+                        <button class="regiao-card litoral-norte" onclick="mostrarRegiao('litoral-norte', this)">
+                            <h3>Litoral Norte</h3>
+                            <span>6 municípios</span>
+                        </button>
+
+                        <button class="regiao-card sudoeste-serrana" onclick="mostrarRegiao('sudoeste-serrana', this)">
+                            <h3>Sudoeste Serrana</h3>
+                            <span>7 municípios</span>
+                        </button>
+
+                        <button class="regiao-card central-sul" onclick="mostrarRegiao('central-sul', this)">
+                            <h3>Central Sul</h3>
+                            <span>5 municípios</span>
+                        </button>
+
+                        <button class="regiao-card caparao" onclick="mostrarRegiao('caparao', this)">
+                            <h3>Caparaó</h3>
+                            <span>11 municípios</span>
+                        </button>
+
+                        <button class="regiao-card litoral-sul" onclick="mostrarRegiao('litoral-sul', this)">
+                            <h3>Litoral Sul</h3>
+                            <span>11 municípios</span>
+                        </button>
+
+                        <button class="regiao-card metropolitana" onclick="mostrarRegiao('metropolitana', this)">
+                            <h3>Metropolitana</h3>
+                            <span>7 municípios</span>
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- MODAL DE MUNICÍPIOS -->
+    <div id="caixaRegiao" class="modal">
+        <div class="modal-conteudo">
+            <button class="fechar" onclick="fecharCaixa()">×</button>
+            <h2 id="tituloRegiao"></h2>
+            <p id="descricaoRegiao"></p>
+            <div id="municipiosRegiao" class="lista-municipios"></div>
+        </div>
+    </div>
+
+const regioes = {
+        "metropolitana": {
+            titulo: "Região Metropolitana",
+            descricao: "Região mais populosa do Espírito Santo, com forte desenvolvimento urbano, industrial e de serviços.",
+            municipios: [
+                ["Cariacica", "cariacica.html"],
+                ["Fundão", "fundao.html"],
+                ["Guarapari", "guarapari.html"],
+                ["Serra", "serra.html"],
+                ["Viana", "viana.html"],
+                ["Vila Velha", "vila-velha.html"],
+                ["Vitória", "vitoria.html"]
+            ]
+        },
+        "noroeste": {
+            titulo: "Noroeste",
+            descricao: "Região marcada pela agricultura, pecuária, granito e tradições rurais.",
+            municipios: [
+                ["Água Doce do Norte", "agua-doce-do-norte.html"],
+                ["Águia Branca", "aguia-branca.html"],
+                ["Barra de São Francisco", "barra-de-sao-francisco.html"],
+                ["Ecoporanga", "ecoporanga.html"],
+                ["Mantenópolis", "mantenopolis.html"],
+                ["Nova Venécia", "nova-venecia.html"],
+                ["Vila Pavão", "vila-pavao.html"]
+            ]
+        },
+        "nordeste": {
+            titulo: "Nordeste",
+            descricao: "Região com produção agrícola, litoral, pesca e municípios históricos.",
+            municipios: [
+                ["Boa Esperança", "boa-esperança.html"],
+                ["Conceição da Barra", "conceicao-da-barra.html"],
+                ["Jaguaré", "jaguare.html"],
+                ["Montanha", "montanha.html"],
+                ["Mucurici", "mucurici.html"],
+                ["Pedro Canário", "pedro-canario.html"],
+                ["Pinheiros", "pinheiros.html"],
+                ["Ponto Belo", "ponto-belo.html"],
+                ["São Mateus", "sao-mateus.html"]
+            ]
+        },
+        "centro-oeste": {
+            titulo: "Centro-Oeste",
+            descricao: "Região de destaque na cafeicultura, indústria, comércio regional e rochas ornamentais.",
+            municipios: [
+                ["Alto Rio Novo", "alto-rio-novo.html"],
+                ["Baixo Guandu", "baixo-guandu.html"],
+                ["Colatina", "colatina.html"],
+                ["Governador Lindenberg", "governador-lindenberg.html"],
+                ["Marilândia", "marilandia.html"],
+                ["Pancas", "pancas.html"],
+                ["São Domingos do Norte", "sao-domingos-do-norte.html"],
+                ["São Gabriel da Palha", "sao-gabriel-da-palha.html"],
+                ["Vila Valério", "vila-valerio.html"]
+            ]
+        },
+        "central-serrana": {
+            titulo: "Central Serrana",
+            descricao: "Região serrana com imigração europeia, agricultura familiar e belas paisagens.",
+            municipios: [
+                ["Itaguaçu", "itaguacu.html"],
+                ["Itarana", "itarana.html"],
+                ["Santa Leopoldina", "santa-leopoldina.html"],
+                ["Santa Maria de Jetibá", "santa-maria-de-jetiba.html"],
+                ["Santa Teresa", "santa-teresa.html"],
+                ["São Roque do Canaã", "sao-roque-do-canaa.html"]
+            ]
+        },
+        "litoral-norte": {
+            titulo: "Litoral Norte",
+            descricao: "Região com praias, reservas naturais, indústria, comunidades indígenas e biodiversidade.",
+            municipios: [
+                ["Aracruz", "aracruz.html"],
+                ["Ibiraçu", "ibiracu.html"],
+                ["João Neiva", "joao-neiva.html"],
+                ["Linhares", "linhares.html"],
+                ["Rio Bananal", "rio-bananal.html"],
+                ["Sooretama", "sooretama.html"]
+            ]
+        },
+        "sudoeste-serrana": {
+            titulo: "Sudoeste Serrana",
+            descricao: "Região de montanhas, clima ameno, café de altitude, agroturismo e tradições europeias.",
+            municipios: [
+                ["Afonso Cláudio", "afonso-claudio.html"],
+                ["Brejetuba", "brejetuba.html"],
+                ["Conceição do Castelo", "conceicao-do-castelo.html"],
+                ["Domingos Martins", "domingos-martins.html"],
+                ["Laranja da Terra", "laranja-da-terra.html"],
+                ["Marechal Floriano", "marechal-floriano.html"],
+                ["Venda Nova do Imigrante", "venda-nova-do-imigrante.html"]
+            ]
+        },
+        "central-sul": {
+            titulo: "Central Sul",
+            descricao: "Região com agricultura, turismo religioso, cachoeiras e tradição rural.",
+            municipios: [
+                ["Alfredo Chaves", "alfredo-chaves.html"],
+                ["Anchieta", "anchieta.html"],
+                ["Iconha", "iconha.html"],
+                ["Piúma", "piuma.html"],
+                ["Rio Novo do Sul", "rio-novo-do-sul.html"]
+            ]
+        },
+        "caparao": {
+            titulo: "Caparaó",
+            descricao: "Região montanhosa marcada pelo Pico da Bandeira, cafés especiais, cachoeiras e turismo de aventura.",
+            municipios: [
+                ["Alegre", "alegre.html"],
+                ["Divino de São Lourenço", "divino-de-sao-lourenco.html"],
+                ["Dores do Rio Preto", "dores-do-rio-preto.html"],
+                ["Guaçuí", "guacui.html"],
+                ["Ibatiba", "ibatiba.html"],
+                ["Ibitirama", "ibiritima.html"], // Corrigido para bater com o arquivo
+                ["Irupi", "irupi.html"],
+                ["Iúna", "iuna.html"],
+                ["Jerônimo Monteiro", "jeronimo-monteiro.html"],
+                ["Muniz Freire", "muniz-freire.html"],
+                ["São José do Calçado", "sao-jose-do-calcado.html"]
+            ]
+        },
+        "litoral-sul": {
+            titulo: "Litoral Sul",
+            descricao: "Região com praias, tradição pesqueira, turismo, rochas ornamentais e cidades históricas.",
+            municipios: [
+                ["Apiacá", "apiaca.html"],
+                ["Atílio Vivácqua", "atilico-vivacqua.html"], // Corrigido para bater com o arquivo
+                ["Bom Jesus do Norte", "bom-jesus-do-norte.html"],
+                ["Cachoeiro de Itapemirim", "cachoeiro-de-itapemirim.html"],
+                ["Castelo", "castelo.html"],
+                ["Itapemirim", "itapemirim.html"],
+                ["Marataízes", "marataizes.html"],
+                ["Mimoso do Sul", "mimoso-do-sul.html"],
+                ["Muqui", "muqui.html"],
+                ["Presidente Kennedy", "presidente-kennedy.html"],
+                ["Vargem Alta", "vargem-alta.html"]
+            ]
+        }
+    };
+
+    function mostrarRegiao(id, botaoClicado) {
+        const regiao = regioes[id];
+        if (!regiao) return;
+
+        document.getElementById("tituloRegiao").textContent = regiao.titulo;
+        document.getElementById("descricaoRegiao").textContent = regiao.descricao;
+
+        const lista = document.getElementById("municipiosRegiao");
+        lista.innerHTML = "";
+
+        regiao.municipios.forEach(municipio => {
+            const link = document.createElement("a");
+            link.href = "../municipios/" + municipio[1];
+            link.textContent = municipio[0];
+            lista.appendChild(link);
+        });
+
+        document.getElementById("caixaRegiao").style.display = "flex";
+    }
+
+    function fecharCaixa() {
+        document.getElementById("caixaRegiao").style.display = "none";
+    }
+    </script>
+
+</body>
+</html>
